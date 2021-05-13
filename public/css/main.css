@@ -1,0 +1,150 @@
+/* トップページ */
+main {
+  width: 600px;
+  margin: 30px auto;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+  margin: 15px auto 8px;
+}
+
+.list-group-item {
+  display: flex;
+}
+
+input[type="checkbox"]:checked + a {
+  text-decoration: line-through;
+  color: gray;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  margin-top: 6px;
+  margin-right: 8px;
+}
+
+.goal-list {
+  max-width: 500px;
+}
+
+.todo-list {
+  max-width: 480px;
+}
+
+.goal-delete-btn  {
+  font-size: 14px;
+  margin-left: auto;
+  padding-left: 8px;
+}
+
+.delete-btn  {
+  font-size: 14px;
+  margin-left: auto;
+  padding-left: 8px;
+}
+
+/* 新規作成 */
+.goal-new-textarea {
+  width: 600px;
+  margin: 10px auto 0;
+}
+
+.new-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.new-title-text {
+  width: 600px;
+  margin: 0 auto 10px;
+}
+
+.new-detail {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.new-detail-textarea {
+  width: 600px;
+  margin: 0 auto;
+}
+
+
+/* 詳細ページ */
+h1.detail-page {
+  margin: 30px auto 15px;
+}
+
+.detail-block {
+  display: table;
+  margin: 0 auto;
+}
+
+.detail-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.detail-title-text {
+  width: 600px;
+  margin: 2px auto 0;
+  border-bottom: solid;  
+  border-width: 2px;
+}
+
+.detail-detail {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.detail-detail-textarea {
+  width: 600px;
+  margin: 2px auto 0;
+  border-bottom: solid;
+  border-width: 2px;
+}
+
+.detail-status {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.detail-button {
+  margin-top: 5px;
+}
+
+
+/* 編集ページ */
+.goal-edit-textarea {
+  width: 600px;
+  margin: 10px auto 0;
+}
+
+.edit-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.edit-title-text {
+  width: 600px;
+  margin: 0 auto 10px;
+}
+
+.edit-detail {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.edit-detail-textarea {
+  width: 600px;
+  margin: 0 auto;
+}
