@@ -1,3 +1,8 @@
+/* 全体 */
+body {
+  background-color:powderblue;
+}
+
 /* トップページ */
 main {
   width: 600px;
