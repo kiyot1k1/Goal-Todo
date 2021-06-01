@@ -4,6 +4,33 @@ body {
 }
 
 /* トップページ */
+header {
+  width: 520px;
+  height: 120px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.header-zone {
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 23px;
+  line-height: 120px;
+}
+
+.goal-pic {
+  height: 120px;
+  width: 150px;
+}
+
+.todo-pic {
+  height: 120px;
+  width: 150px;
+}
+
 main {
   width: 600px;
   margin: 30px auto;
