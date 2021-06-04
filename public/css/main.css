@@ -1,6 +1,6 @@
 /* 全体 */
 body {
-  background-color:powderblue;
+  background: radial-gradient(rgba(47, 134, 210, 0.9), rgba(215, 234, 255, 0.8)), url(./../../img/background.jpg);
 }
 
 /* トップページ */
