@@ -1,13 +1,14 @@
 /* 全体 */
 body {
   background: radial-gradient(rgba(47, 134, 210, 0.9), rgba(215, 234, 255, 0.8)), url(./../../img/background.jpg);
+  background-size: cover; 
 }
 
 /* トップページ */
 header {
-  width: 520px;
-  height: 120px;
-  margin: 20px auto;
+  width: 600px;
+  height: 140px;
+  margin: 0 auto 50px;
   text-align: center;
 }
 
@@ -17,18 +18,19 @@ header {
 }
 
 header h1 {
-  font-size: 23px;
-  line-height: 120px;
+  font-size: 25px;
+  line-height: 140px;
+  font-weight: bold;
 }
 
 .goal-pic {
-  height: 120px;
-  width: 150px;
+  height: 140px;
+  width: 170px;
 }
 
 .todo-pic {
-  height: 120px;
-  width: 150px;
+  height: 140px;
+  width: 170px;
 }
 
 main {
@@ -45,6 +47,11 @@ h2 {
   font-size: 20px;
   text-align: center;
   margin: 15px auto 8px;
+}
+
+h2 a {
+  color :black;
+  font-weight: bold;
 }
 
 .list-group-item {
