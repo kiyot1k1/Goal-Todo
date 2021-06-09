@@ -31,11 +31,21 @@ if (isset($_POST['todo_id'])) {
   <link href="./../../public/css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <main>
-    <h1>目標・TODOリスト</h1>
+  <header>
+    <div class="header-zone">
+      <div>
+        <img src="./../../img/Goal.jpg" alt="目標の写真" class="goal-pic">
+      </div>
+      <h1>目標 ＆ TODOリスト</h1>
+      <div>
+        <img src="./../../img/Todolist.jpg" alt="TODOの写真" class="todo-pic">
+      </div>
+    </div>
+  </header>
 
+  <main>
     <!-- 目標設定用 -->
-    <h2><a href="./goal_new.php">目標設定</a></div></h2>
+    <h2><a href="./goal_new.php">目標設定</a></h2>
 
     <?php if ($error_msg): ?>
       <div><?php echo $error_msg; ?></div>
@@ -170,7 +180,7 @@ if (isset($_POST['todo_id'])) {
             if ($(this).is(':checked')) {
               $(this).parent().find('.todo-list').css({'text-decoration': 'line-through', 'color': 'gray'});
             } else {
-              $(this).parent().find('.todo-list').css({'color': '#0d6efd', 'text-decoration': 'underline', 'cursor': 'pointer' });
+              $(this).parent().find('.todo-list').css({'color': 'black', 'text-decoration': 'underline', 'cursor': 'pointer' });
             }            
             
           } else {
