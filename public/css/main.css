@@ -12,8 +12,11 @@ header {
 }
 
 .header-zone {
+  height: 140px;
   display: flex;
   justify-content: space-between;
+  /* background: radial-gradient(rgb(223, 231, 250), rgba(9, 61, 174)); */
+  background: radial-gradient(rgb(249, 249, 249), rgb(0, 103, 193));
 }
 
 header h1 {
@@ -31,6 +34,10 @@ header h1 {
 .todo-pic {
   height: 140px;
   width: 170px;
+}
+
+header a {
+  text-decoration: none;
 }
 
 h1 {
