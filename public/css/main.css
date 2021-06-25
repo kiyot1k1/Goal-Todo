@@ -5,35 +5,36 @@ body {
 }
 
 header {
-  width: 600px;
+  width: 500px;
   height: 140px;
-  margin: 0 auto 50px;
+  margin: 0 auto;
   text-align: center;
 }
 
 .header-zone {
-  height: 140px;
+  width: 500px;
+  height: 90px;
+  margin: 30px auto 0;
   display: flex;
   justify-content: space-between;
-  /* background: radial-gradient(rgb(223, 231, 250), rgba(9, 61, 174)); */
-  background: radial-gradient(rgb(249, 249, 249), rgb(0, 103, 193));
+  background: radial-gradient(rgb(254, 253, 253), rgb(0, 47, 87));
 }
 
 header h1 {
-  font-size: 25px;
-  line-height: 140px;
+  font-size: 22px;
+  line-height: 90px;
   font-weight: bold;
-  color: midnightblue;
+  color: rgb(50, 50, 50);;
 } 
 
 .goal-pic {
-  height: 140px;
-  width: 170px;
+  height: 90px;
+  width: 140px;
 }
 
 .todo-pic {
-  height: 140px;
-  width: 170px;
+  height: 90px;
+  width: 140px;
 }
 
 header a {
@@ -47,12 +48,12 @@ h1 {
   color: midnightblue;
 }
 
-/* トップページ */
 main {
   width: 600px;
   margin: 30px auto;
 }
 
+/* トップページ */
 h2 {
   font-size: 20px;
   text-align: center;
@@ -128,7 +129,6 @@ input[type="checkbox"] {
   margin: 0 auto;
 }
 
-
 /* 詳細ページ */
 h1.detail-page {
   margin: 30px auto 15px;
@@ -186,7 +186,6 @@ h1.detail-page {
 .detail-button {
   margin-top: 15px;
 }
-
 
 /* 編集ページ */
 .goal-edit-textarea {
