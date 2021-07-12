@@ -2,11 +2,5 @@
   "require": {
     "php": "~8.0.0",
     "ext-mbstring": "*"
-  },
-  "scripts": {
-    "post-install-cmd": [
-      "php artisan clear-compiled",
-      "chmod -R 777 public/"
-    ]
   }
 } 
