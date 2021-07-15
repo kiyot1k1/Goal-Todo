@@ -1,6 +1,7 @@
 {
   "require": {
-    "php": "~8.0.0",
+    "silex/silex": "~1.1",
+    "php": "~7.3.0",
     "ext-mbstring": "*"
   }
 } 
