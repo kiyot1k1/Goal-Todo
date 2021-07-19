@@ -1,6 +1,6 @@
 <?php
-require_once('./../../model/Todo.php');
-require_once('./../../validation/TodoValidation.php');
+require_once(__DIR__ . './../model/Todo.php');
+require_once(__DIR__ . './../validation/TodoValidation.php');
 
 // 目標設定用
 class GoalController {
