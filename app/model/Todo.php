@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . './../config/db.php');
+require_once(__DIR__ . '/../config/db.php');
 
 // 目標設定用
 class Goal {
