@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . './../../controller/TodoController.php');
+require_once(__DIR__ . '/../../controller/TodoController.php');
 
 $goal_controller = new GoalController;
 $goal_list = $goal_controller->goal_index();
