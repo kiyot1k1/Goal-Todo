@@ -1,7 +1,6 @@
 setup:
   addons:
     - plan: heroku-mysql
-      as: DATABASE
 build:
   docker:
     web: docker/php/Dockerfile
