@@ -3,4 +3,4 @@ setup:
     - plan: heroku-mysql
 build:
   docker:
-    web: docker/php/Dockerfile
+    web: Dockerfile
