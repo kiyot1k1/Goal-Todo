@@ -1,8 +1,8 @@
-setup:
-  addons:
-    - plan: heroku-mysql
+# setup:
+#   addons:
+#     - plan: heroku-mysql
 build:
   docker:
     web: Dockerfile
 run:
-  web: docker run --port $PORT
+  web: docker run -p $PORT
