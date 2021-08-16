@@ -4,5 +4,5 @@ setup:
 build:
   docker:
     web: Dockerfile
-# run:
-#   web: docker run -p 9000:$PORT
+run:
+  web: docker run -p $PORT
