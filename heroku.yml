@@ -5,4 +5,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: docker run -p $PORT:80
+  web: docker run -p 8000:$PORT
