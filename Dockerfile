@@ -1,4 +1,4 @@
-FROM php:7.3-fpm
+FROM php:7.0-fpm
 
 # install composer
 RUN cd /usr/bin && curl -s http://getcomposer.org/installer \n\
