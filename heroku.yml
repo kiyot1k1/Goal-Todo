@@ -5,4 +5,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: docker run
+  web: docker run -p $PORT
