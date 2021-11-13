@@ -4,7 +4,7 @@
 build:
   docker:
     web: Dockerfile
-# run:
-#   web: php-fpm
+run:
+  web: php-fpm run -p $PORT
 # run:
 #   web: docker run -p $PORT
