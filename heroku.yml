@@ -7,6 +7,6 @@ build:
 # run:
 #   web: /bin/sh -c php-fpm\ run\ -p\ \$PORT
 run:
-  web: docker run -p 80:$PORT 
+  web: docker run -p 80:$PORT -e PORT=$PORT
 # run:
 #   web: docker run -p 80:$PORT -e PORT=$PORT
