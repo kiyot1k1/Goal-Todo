@@ -12,8 +12,7 @@ vim
 
 RUN apt-get update \
     && apt-get install -y libpq-dev \
-    && docker-php-ext-install pdo_mysql pdo_pgsql mysqli \
-    && docker run -p 80:$PORT
+    && docker-php-ext-install pdo_mysql pdo_pgsql mysqli
 
 # COPY ./default.conf /etc/nginx/conf.d/default.conf
 
