@@ -9,4 +9,4 @@ build:
 # run:
 #   web: docker run -p 80:$PORT -e PORT=$PORT
 run:
-  web: docker run -p 9000:$PORT -e PORT=$PORT
+  web: docker run -p 9000:$PORT
