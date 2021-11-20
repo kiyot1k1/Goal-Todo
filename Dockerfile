@@ -17,3 +17,5 @@ RUN apt-get update \
 # COPY ./default.conf /etc/nginx/conf.d/default.conf
 
 WORKDIR /var/www/html
+
+CMD [ "docker run -p $PORT" ]
