@@ -18,4 +18,6 @@ RUN apt-get update \
 
 WORKDIR /var/www/html
 
+ENV PORT $PORT
+
 # CMD [ "docker run -p $PORT" ]
