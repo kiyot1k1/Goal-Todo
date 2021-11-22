@@ -7,6 +7,6 @@ build:
 # run:
 #   web: sed -i -e 's/$PORT/'"$PORT"'/g' /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'
 run:
-  web: docker run -p 9000:$PORT -e PORT=$PORT
+  web: run -p 9000:$PORT -e PORT=$PORT
 # run:
 #   web: php -p $PORT -e PORT=$PORT
