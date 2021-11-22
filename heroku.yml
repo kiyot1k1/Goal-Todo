@@ -4,8 +4,8 @@
 build:
   docker:
     web: Dockerfile
-# run:
-#   web: /bin/sh -c php-fpm\ run\ -p\ \$PORT
+run:
+  web: sed -i -e 's/$PORT/'"$PORT"'/g' /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'
 # run:
 #   web: docker run -p 80:$PORT -e PORT=$PORT
 # run:
