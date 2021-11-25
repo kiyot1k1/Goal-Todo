@@ -14,11 +14,10 @@ RUN apt-get update \
     && apt-get install -y libpq-dev \
     && docker-php-ext-install pdo_mysql pdo_pgsql mysqli
 
-RUN docker run -p $PORT
 # COPY ./default.conf /etc/nginx/conf.d/default.conf
 
 WORKDIR /var/www/html
 
 ENV PORT $PORT
 
-# CMD sed -i -e 's/$PORT/'"$PORT"'/g' /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'
+CMD docker run -p $PORT
