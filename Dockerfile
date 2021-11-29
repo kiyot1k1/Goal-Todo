@@ -20,4 +20,4 @@ WORKDIR /var/www/html
 
 ENV PORT $PORT
 
-CMD bin/docker run -p $PORT
+CMD docker run -p $PORT
