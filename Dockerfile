@@ -20,4 +20,4 @@ WORKDIR /var/www/html
 
 ENV PORT $PORT
 
-CMD ["./default.conf"]
+# CMD ["./default.conf"]
