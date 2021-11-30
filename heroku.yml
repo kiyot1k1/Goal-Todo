@@ -11,4 +11,4 @@ build:
 # run:
 #   web: vendor/bin/heroku-php-nginx -P $PORT
 run:
-  web: php -b 0.0.0.0:$PORT
+  web: php -S 0.0.0.0:$PORT
