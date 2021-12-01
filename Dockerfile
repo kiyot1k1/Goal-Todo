@@ -20,5 +20,5 @@ WORKDIR /var/www/html
 
 # ENV PORT $PORT
 
-CMD sed -i “s/80/$PORT/g/” /etc/nginx/conf.d/default.conf
+# CMD sed -i “s/80/$PORT/g/” /etc/nginx/conf.d/default.conf
 # CMD sed -i 's/80/$PORT/g'  /etc/nginx/conf.d/default.conf

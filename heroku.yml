@@ -10,5 +10,5 @@ build:
 #   web: docker run -p $PORT -e PORT=$PORT
 # run:
 #   web: vendor/bin/heroku-php-nginx -P $PORT
-# run:
-#   web: php -S 0.0.0.0:$PORT
+run:
+  web: php -S 0.0.0.0:$PORT
