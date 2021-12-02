@@ -18,7 +18,7 @@ COPY default.conf /etc/nginx/conf.d/default.conf
 
 WORKDIR /var/www/html
 
-# ENV PORT $PORT
+ENV PORT $PORT
 
 CMD sed -i “s/80/$PORT/g” /etc/nginx/conf.d/default.conf
 # CMD sed -i 's/80/$PORT/g'  /etc/nginx/conf.d/default.conf
