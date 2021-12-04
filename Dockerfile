@@ -20,4 +20,4 @@ WORKDIR /var/www/html
 
 # ENV PORT $PORT
 
-CMD sed -i 's/80/'$PORT'/g' /etc/nginx/conf.d/default.conf && /etc/nginx/conf.d/default.conf -g 'daemon off;'
+CMD sed -i 's/80/'$PORT'/g' /etc/nginx/conf.d/default.conf && ./default.conf 'daemon off;'
