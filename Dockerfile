@@ -14,11 +14,11 @@ RUN apt-get update \
     && apt-get install -y libpq-dev \
     && docker-php-ext-install pdo_mysql pdo_pgsql mysqli
 
-COPY ./default.conf /etc/nginx/conf.d/default.conf
-
 WORKDIR /var/www/html
+
+# COPY ./default.conf /etc/nginx/conf.d/default.conf
 
 # ENV PORT $PORT
 
 # CMD sed -i 's/80/'$PORT'/g' /etc/nginx/conf.d/default.conf && docker-php-entrypoint php-fpm
-CMD sed -i 's/80/'$PORT'/g' /etc/nginx/conf.d/default.conf
+# CMD sed -i 's/80/'$PORT'/g' /etc/nginx/conf.d/default.conf
