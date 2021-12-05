@@ -20,5 +20,5 @@ WORKDIR /var/www/html
 
 # ENV PORT $PORT
 
-CMD sed -i 's/80/'$PORT'/g' /etc/nginx/conf.d/default.conf && docker-php-entrypoint php-fpm
+# CMD sed -i 's/80/'$PORT'/g' /etc/nginx/conf.d/default.conf && docker-php-entrypoint php-fpm
 CMD sed -i 's/80/'$PORT'/g' /etc/nginx/conf.d/default.conf && /docker-entrypoint.sh nginx -g 'daemon off;'
