@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . '/../../controller/TodoController.php');
+require_once(__DIR__ . '/controller/TodoController.php');
 
 $goal_controller = new GoalController;
 $goal_list = $goal_controller->goal_index();
@@ -28,18 +28,18 @@ if (isset($_POST['todo_id'])) {
   <title>目標・Todo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link href="./../../public/css/main.css" rel="stylesheet" type="text/css">
+  <link href="./public/css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <header>
     <a href="./index.php">
       <div class="header-zone">
         <div>
-          <img src="./../../img/Goal.jpg" alt="目標の写真" class="goal-pic">
+          <img src="./img/Goal.jpg" alt="目標の写真" class="goal-pic">
         </div>
         <h1>目標 ＆ TODOリスト</h1>
         <div>
-          <img src="./../../img/Todolist.jpg" alt="TODOの写真" class="todo-pic">
+          <img src="./img/Todolist.jpg" alt="TODOの写真" class="todo-pic">
         </div>
       </div>
     </a>
@@ -48,7 +48,7 @@ if (isset($_POST['todo_id'])) {
   <main>
       
       <!-- 目標設定用 -->
-      <h2><a href="./goal_new.php">目標設定</a></h2>
+      <h2><a href="./view/todo/goal_new.php">目標設定</a></h2>
   
       <?php if ($error_msg): ?>
         <div><?php echo $error_msg; ?></div>
@@ -58,7 +58,7 @@ if (isset($_POST['todo_id'])) {
         <ul class="list-group">
           <?php foreach($goal_list as $goal): ?>
             <li class="list-group-item"> 
-              <a href="./goal_edit.php?goal_id=<?php echo $goal['id'] ?>" class="goal-list"><?php echo $goal['goal']; ?></a>
+              <a href="./view/todo/goal_edit.php?goal_id=<?php echo $goal['id'] ?>" class="goal-list"><?php echo $goal['goal']; ?></a>
               <div class="goal-delete-btn" data-id="<?php echo $goal['id']; ?>">
                 <button>削除</button>
               </div>
@@ -71,7 +71,7 @@ if (isset($_POST['todo_id'])) {
   
   
       <!-- ここからTODO用 -->
-      <h2><a href="./new.php">TODO作成</a></h2>
+      <h2><a href="./view/todo/new.php">TODO作成</a></h2>
   
       <?php if ($error_msg): ?>
         <div><?php echo $error_msg; ?></div>
@@ -82,7 +82,7 @@ if (isset($_POST['todo_id'])) {
           <?php foreach($todo_list as $todo): ?>
             <li class="list-group-item"> 
               <input type="checkbox" class="todo-checkbox" data-id="<?php echo $todo['id']; ?>"<?php if ($todo['status']): ?>checked<?php endif; ?>>
-              <a href="./detail.php?todo_id=<?php echo $todo['id'] ?>" class="todo-list"><?php echo $todo['title']; ?></a>
+              <a href="./view/todo/detail.php?todo_id=<?php echo $todo['id'] ?>" class="todo-list"><?php echo $todo['title']; ?></a>
               <div class="delete-btn" data-id="<?php echo $todo['id']; ?>">
                 <button>削除</button>
               </div>
@@ -96,7 +96,7 @@ if (isset($_POST['todo_id'])) {
   </main>
 
 
-  <script src="./../../public/js/jquery-3.6.0.min.js"></script>
+  <script src="./public/js/jquery-3.6.0.min.js"></script>
   <script>
   //目標設定用
     $(".goal-delete-btn").click(function() {
@@ -107,7 +107,7 @@ if (isset($_POST['todo_id'])) {
         data.goal_id = goal_id;
     
         $.ajax({
-          url: './goal_delete.php',
+          url: './view/todo/goal_delete.php',
           type: 'POST',
           data: data
         }).then(
@@ -141,7 +141,7 @@ if (isset($_POST['todo_id'])) {
         data.todo_id = todo_id;
     
         $.ajax({
-          url: './delete.php',
+          url: './view/todo/delete.php',
           type: 'POST',
           data: data
         }).then(
@@ -171,7 +171,7 @@ if (isset($_POST['todo_id'])) {
       data.todo_id = todo_id;
 
       $.ajax({
-        url: './update_status.php',
+        url: './view/todo/update_status.php',
         type: 'POST',
         data: data
       }).then(
