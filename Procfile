@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-nginx app/view/todo
+web: vendor/bin/heroku-php-nginx app/
