@@ -26,16 +26,16 @@ services:
   #     - "3306:3306"
   #   volumes:
   #     - mysql-data:/var/lib/mysql
-  # mysql:
-  #   image: mysql:latest
-  #   environment:
-  #     MYSQL_DATABASE: heroku_68938efde0e573f 
-  #     MYSQL_USER: bca4e6b9d4fe29
-  #     MYSQL_PASSWORD: c34b77fe
-  #     MYSQL_ROOT_PASSWORD: c34b77fe
-  #   ports:
-  #     - "3306:3306"
-  #   volumes:
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: heroku_68938efde0e573f 
+      MYSQL_USER: bca4e6b9d4fe29
+      MYSQL_PASSWORD: c34b77fe
+      MYSQL_ROOT_PASSWORD: c34b77fe
+    ports:
+      - "3306:3306"
+    volumes:
   #     - mysql-data:/var/lib/mysql
 volumes:
   mysql-data:
