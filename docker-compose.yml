@@ -33,8 +33,8 @@ services:
       MYSQL_USER: bca4e6b9d4fe29
       MYSQL_PASSWORD: c34b77fe
       MYSQL_ROOT_PASSWORD: c34b77fe
-    # ports:
-    #   - "3306:3306"
+    ports:
+      - "3306:3306"
     volumes:
       - mysql-data:/var/lib/mysql
 volumes:
