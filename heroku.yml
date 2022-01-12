@@ -10,6 +10,3 @@ build:
 
 # run:
 #   web: docker-php-entrypoint php-fpm -p $PORT
-
-# run:
-#   web: php -S 0.0.0.0:$PORT
