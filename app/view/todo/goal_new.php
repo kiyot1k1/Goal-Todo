@@ -35,7 +35,7 @@ if (isset($_SESSION['error_msg'])) {
 </head>
 <body>
   <header>
-    <a href="./index.php">
+    <a href="./../../index.php">
       <div class="header-zone">
         <div>
           <img src="./../../img/Goal.jpg" alt="目標の写真" class="goal-pic">
