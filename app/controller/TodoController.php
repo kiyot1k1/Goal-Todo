@@ -40,7 +40,7 @@ class GoalController {
       return;
     }
 
-    header("Location: ../../index.php");
+    header("Location: ./../index.php");
   }
 
   public function goal_edit() {
@@ -70,7 +70,7 @@ class GoalController {
     if (!$_POST['goal_id']) {
       session_start();
       $_SESSION['error_msg'] = "指定したIDに該当するデータがありません。";
-      header("Location: ../../index.php");
+      header("Location: ./../index.php");
       return;
     }
 
@@ -111,7 +111,7 @@ class GoalController {
       return;
     }
 
-    header("Location: ../../index.php");
+    header("Location: ./../index.php");
   }
 
   public function goal_delete() {
@@ -196,7 +196,7 @@ class TodoController {
       return;
     }
 
-    header("Location: ../../index.php");
+    header("Location: ./../index.php");
   }
 
   public function edit() {
@@ -238,7 +238,7 @@ class TodoController {
     if (!$_POST['todo_id']) {
       session_start();
       $_SESSION['error_msgs'] = "指定したIDに該当するデータがありません。";
-      header("Location: ../../index.php");
+      header("Location: ./../index.php");
       return;
     }
 
@@ -281,7 +281,7 @@ class TodoController {
       return;
     }
 
-    header("Location: ../../index.php");
+    header("Location: ./../index.php");
   }
 
   public function delete() {
