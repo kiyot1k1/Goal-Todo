@@ -61,7 +61,7 @@ if (isset($_SESSION['error_msg'])) {
       <div>
         <textarea name="goal" class="goal-new-textarea"><?php echo $goal; ?></textarea>
       </div>
-      <button type="submit" class="">設定</button>
+      <button type="submit">設定</button>
     </form> 
   </main>
 </body>
