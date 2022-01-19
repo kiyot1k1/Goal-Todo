@@ -40,7 +40,8 @@ class GoalController {
       return;
     }
 
-    header("Location: __DIR__ . '/../index.php'");
+    // header("Location: __DIR__ . '/../index.php'");
+    header("Location: https://goal-todo.herokuapp.com/index.php");
   }
 
   public function goal_edit() {
