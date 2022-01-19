@@ -40,8 +40,6 @@ class GoalController {
       return;
     }
 
-    // header("Location: ./../index.php");
-    // header("Location: __DIR__ . '/../index.php'");
     header("Location: https://goal-todo.herokuapp.com/index.php");
   }
 
