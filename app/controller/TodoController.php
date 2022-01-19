@@ -40,7 +40,7 @@ class GoalController {
       return;
     }
 
-    header("Location: ./../index.php");
+    header("Location: __DIR__ . './../index.php'");
   }
 
   public function goal_edit() {
