@@ -281,7 +281,7 @@ class TodoController {
       return;
     }
 
-    header("Location: ./../index.php");
+    header("Location: https://goal-todo.herokuapp.com/index.php");
   }
 
   public function delete() {
