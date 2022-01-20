@@ -70,7 +70,7 @@ class GoalController {
     if (!$_POST['goal_id']) {
       session_start();
       $_SESSION['error_msg'] = "指定したIDに該当するデータがありません。";
-      header("Location: ./../index.php");
+      header("Location: https://goal-todo.herokuapp.com/index.php");
       return;
     }
 
@@ -196,7 +196,7 @@ class TodoController {
       return;
     }
 
-    header("Location: ./../index.php");
+    header("Location: https://goal-todo.herokuapp.com/index.php");
   }
 
   public function edit() {
