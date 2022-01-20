@@ -238,7 +238,7 @@ class TodoController {
     if (!$_POST['todo_id']) {
       session_start();
       $_SESSION['error_msgs'] = "指定したIDに該当するデータがありません。";
-      header("Location: ./../index.php");
+      header("Location: https://goal-todo.herokuapp.com/index.php");
       return;
     }
 
