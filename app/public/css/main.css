@@ -4,8 +4,10 @@ body {
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center;
-  width: 100vw;
-  height: 100vh;
+  max-width: 100%;
+  height: auto;
+  /* width: 100vw;
+  height: 100vh; */
 }
 
 header {
