@@ -1,10 +1,10 @@
 /* 全体 */
-body {
+/* body {
   background: radial-gradient(rgb(223, 238, 250), rgba(9, 111, 174, 0.75)), url(./../../img/background.jpg);
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
 header {
   width: 500px;
