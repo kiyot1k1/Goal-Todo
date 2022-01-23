@@ -1,7 +1,7 @@
 /* 全体 */
 body {
   background: radial-gradient(rgb(223, 238, 250), rgba(9, 111, 174, 0.75)), url(./../../img/background.jpg);
-  background-size: cover; 
+  background-size: contain; 
   background-repeat: no-repeat;
   background-position: center;
   width: 100vw;
