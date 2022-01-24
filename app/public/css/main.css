@@ -218,3 +218,17 @@ h1.detail-page {
   width: 600px;
   margin: 0 auto;
 }
+
+/* レスポンシブデザイン */
+@media (max-width: 767px) {
+  body {
+    background: radial-gradient(rgb(223, 238, 250), rgba(9, 111, 174, 0.75));
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    /* max-width: 100%;
+    height: auto; */
+  }
+}
