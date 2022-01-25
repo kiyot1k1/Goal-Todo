@@ -231,7 +231,7 @@ h1.detail-page {
   }
 
   .list-group {
-    width: 90%;
+    width: 200px;
     /* margin: 10px auto 0; */
   }
 }
