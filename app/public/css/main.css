@@ -230,7 +230,7 @@ h1.detail-page {
     height: 100vh;
   }
 
-  .goal-new-textarea {
+  .list-group {
     width: 90%;
     /* margin: 10px auto 0; */
   }
