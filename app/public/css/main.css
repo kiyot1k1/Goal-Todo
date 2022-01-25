@@ -229,4 +229,9 @@ h1.detail-page {
     width: 100vw;
     height: 100vh;
   }
+
+  .goal-new-textarea {
+    width: 90%;
+    /* margin: 10px auto 0; */
+  }
 }
