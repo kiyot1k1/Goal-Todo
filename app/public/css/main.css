@@ -230,6 +230,10 @@ h1.detail-page {
     height: 100vh;
   }
 
+  .header-zone {
+    width: 90%;
+  }
+
   .list-group {
     width: 90%;
     /* margin: 10px auto 0; */
