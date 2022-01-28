@@ -230,6 +230,10 @@ h1.detail-page {
     height: 100vh;
   }
 
+  header {
+    width: 100vw;
+  }
+
   .header-zone {
     width: 90%;
   }
