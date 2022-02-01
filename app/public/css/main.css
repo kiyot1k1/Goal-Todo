@@ -22,8 +22,8 @@ header {
   height: 90px;
   margin: 30px auto 0;
   display: flex;
-  justify-content: space-between;
-  background: radial-gradient(rgb(254, 253, 253), rgb(0, 47, 87));
+  /* justify-content: space-between;
+  background: radial-gradient(rgb(254, 253, 253), rgb(0, 47, 87)); */
 }
 
 header h1 {
