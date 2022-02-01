@@ -40,8 +40,8 @@ if (isset($_POST['todo_id'])) {
         <div>
           <img src="./img/Todolist.jpg" alt="TODOの写真" class="todo-pic">
         </div>
-        <h1>目標とTODOの管理ツール</h1>
       </div>
+      <h1>目標とTODOの管理ツール</h1>
       <!-- <div class="header-zone">
         <div>
           <img src="./img/Goal.jpg" alt="目標の写真" class="goal-pic">
