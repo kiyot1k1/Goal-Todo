@@ -234,9 +234,9 @@ h1.detail-page {
     width: 100%;
   }
 
-  /* .header-zone {
-    width: 40%;
-  } */
+  .header-zone {
+    width: 300px;
+  }
 
   .list-group {
     width: 90vw;
