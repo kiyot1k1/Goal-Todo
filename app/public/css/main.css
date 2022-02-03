@@ -232,11 +232,11 @@ h1.detail-page {
 
   header {
     width: 100%;
-    height: 90px;
+    height: 70px;
   }
 
   .header-zone {
-    width: 280px;
+    width: 220px;
     margin: 15px auto 0;
   }
 
@@ -252,7 +252,7 @@ h1.detail-page {
 
   header h1 {
     font-size: 15px;
-    line-height: 40px;
+    line-height: 30px;
   } 
 
   main {
