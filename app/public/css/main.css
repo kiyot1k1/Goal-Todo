@@ -239,6 +239,17 @@ h1.detail-page {
     width: 280px;
     margin: 15px auto 0;
   }
+
+  .goal-pic {
+    height: 70px;
+    width: 110px;
+  }
+  
+  .todo-pic {
+    height: 70px;
+    width: 110px;
+  }
+
   header h1 {
     line-height: 40px;
   } 
