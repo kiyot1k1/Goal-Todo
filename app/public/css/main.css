@@ -237,6 +237,7 @@ h1.detail-page {
 
   .header-zone {
     width: 280px;
+    margin: 15px auto 0;
   }
   header h1 {
     line-height: 40px;
