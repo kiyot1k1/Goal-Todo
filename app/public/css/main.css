@@ -235,15 +235,19 @@ h1.detail-page {
     height: 90px;
   }
 
+  .header-zone {
+    width: 280px;
+  }
+  header h1 {
+    line-height: 40px;
+  } 
+
   main {
     width: 100vw;
   }
 
-  .header-zone {
-    width: 280px;
-  }
-
   .list-group {
     width: 90vw;
+    margin: 10px auto;
   }
 }
