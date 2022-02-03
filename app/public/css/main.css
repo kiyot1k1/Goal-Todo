@@ -259,6 +259,12 @@ h1.detail-page {
     width: 100vw;
   }
 
+  h2 {
+    font-size: 15px;
+    text-align: center;
+    margin: 10px auto 8px;
+  }  
+
   .list-group {
     width: 90vw;
     margin: 10px auto;
