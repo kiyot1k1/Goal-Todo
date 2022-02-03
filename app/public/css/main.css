@@ -235,6 +235,10 @@ h1.detail-page {
     height: 90px;
   }
 
+  main {
+    width: 100vw;
+  }
+
   .header-zone {
     width: 285px;
   }
