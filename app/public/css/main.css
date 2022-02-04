@@ -272,4 +272,8 @@ h1.detail-page {
     width: 90vw;
     margin: 10px auto;
   }
+
+  .goal-delete-btn  {
+    font-size: 10px;
+  }
 }
