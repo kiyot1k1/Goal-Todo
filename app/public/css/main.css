@@ -55,6 +55,7 @@ h1 {
 main {
   width: 600px;
   margin: 30px auto;
+  padding-bottom: 30px;
 }
 
 /* トップページ */
