@@ -258,6 +258,7 @@ h1.detail-page {
 
   main {
     width: 100vw;
+    padding-top: 30px;
     margin: 0 auto;
   }
 
