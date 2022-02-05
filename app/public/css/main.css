@@ -27,6 +27,7 @@ header h1 {
   line-height: 40px;
   font-weight: bold;
   color: rgb(50, 50, 50);;
+  margin-bottom: 10px;
 } 
 
 .goal-pic {
