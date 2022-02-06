@@ -277,7 +277,7 @@ h1.detail-page {
   } */
   
   .todo-list {
-    padding-right: 4px;
+    margin-right: 4px;
   }
 
   .goal-delete-btn  {
