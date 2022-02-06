@@ -272,9 +272,9 @@ h1.detail-page {
     margin: 10px auto;
   }
 
-  /* .goal-list {
-
-  } */
+  .goal-list {
+    width: 70vw;
+  }
   
   .todo-list {
     width: 70vw;
