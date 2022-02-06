@@ -274,10 +274,11 @@ h1.detail-page {
 
   .goal-delete-btn  {
     font-size: 10px;
+    width: 44px;
   }
 
   .delete-btn  {
     font-size: 10px;
-    width: 36px;
+    width: 44px;
   }
 }
