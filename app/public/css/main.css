@@ -273,6 +273,10 @@ h1.detail-page {
     margin: 10px auto;
   }
 
+  .list-group-item {
+    padding: 8px;
+  }
+
   .goal-list {
     width: 70vw;
   }
