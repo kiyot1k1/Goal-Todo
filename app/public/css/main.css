@@ -272,6 +272,14 @@ h1.detail-page {
     margin: 10px auto;
   }
 
+  /* .goal-list {
+
+  } */
+  
+  .todo-list {
+    padding-right: 4px;
+  }
+
   .goal-delete-btn  {
     font-size: 10px;
     width: 44px;
