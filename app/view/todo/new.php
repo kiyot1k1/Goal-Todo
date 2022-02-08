@@ -38,17 +38,17 @@ if (isset($_SESSION['error_msgs'])) {
   <link href="./../../public/css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <header>
+ <header> 
     <a href="./../../index.php">
       <div class="header-zone">
         <div>
           <img src="./../../img/Goal.jpg" alt="目標の写真" class="goal-pic">
         </div>
-        <h1>目標 ＆ TODOリスト</h1>
         <div>
           <img src="./../../img/Todolist.jpg" alt="TODOの写真" class="todo-pic">
         </div>
       </div>
+      <h1>目標とTODOの管理ツール</h1>
     </a>
   </header>
   
