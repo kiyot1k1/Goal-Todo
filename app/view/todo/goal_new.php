@@ -38,7 +38,7 @@ if (isset($_SESSION['error_msg'])) {
     <a href="./../../index.php">
       <div class="header-zone">
         <div>
-          <img src="./img/Goal.jpg" alt="目標の写真" class="goal-pic">
+          <img src="./../../img/Goal.jpg" alt="目標の写真" class="goal-pic">
         </div>
         <div>
           <img src="./img/Todolist.jpg" alt="TODOの写真" class="todo-pic">
