@@ -41,7 +41,7 @@ if (isset($_SESSION['error_msg'])) {
           <img src="./../../img/Goal.jpg" alt="目標の写真" class="goal-pic">
         </div>
         <div>
-          <img src="./img/Todolist.jpg" alt="TODOの写真" class="todo-pic">
+          <img src="./../../img/Todolist.jpg" alt="TODOの写真" class="todo-pic">
         </div>
       </div>
       <h1>目標とTODOの管理ツール</h1>
