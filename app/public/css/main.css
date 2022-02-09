@@ -302,7 +302,8 @@ h1.detail-page {
   /* 新規作成 */
   h1 {
     font-size: 15px;
-    line-height: 30px;
+    text-align: center;
+    margin: 10px auto 8px;
   } 
 
   .goal-new-textarea {
