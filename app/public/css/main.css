@@ -218,6 +218,8 @@ h1.detail-page {
 }
 
 /* レスポンシブデザイン */
+
+/* トップページ */
 @media (max-width: 767px) {
   body {
     background: radial-gradient(rgb(223, 238, 250), rgba(9, 111, 174, 0.75));
@@ -296,4 +298,10 @@ h1.detail-page {
     width: 44px;
     padding-left: 4px;
   }
+
+  /* 新規作成 */
+  h1 {
+    font-size: 15px;
+    line-height: 30px;
+  } 
 }
