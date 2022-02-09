@@ -304,4 +304,9 @@ h1.detail-page {
     font-size: 15px;
     line-height: 30px;
   } 
+
+  .goal-new-textarea {
+    width: 90vw;
+    margin: 10px auto 0;
+  }
 }
