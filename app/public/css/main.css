@@ -307,9 +307,7 @@ h1.detail-page {
   } 
 
   .goal-new-textarea {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
+    width: 90vw;
   }
 
   form {
