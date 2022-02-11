@@ -306,7 +306,12 @@ h1.detail-page {
     margin: 10px auto 8px;
   } 
 
-  .goal-new-textarea {
+  /* .goal-new-textarea {
+    width: 90vw;
+    text-align: center;
+  } */
+
+  textarea {
     width: 90vw;
     text-align: center;
   }
