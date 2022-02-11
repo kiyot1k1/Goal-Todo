@@ -311,6 +311,7 @@ h1.detail-page {
   }
 
   form {
+    text-align: center;
     /* margin-right: auto;
     margin-left: auto; */
   }
