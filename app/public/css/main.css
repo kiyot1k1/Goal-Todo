@@ -310,6 +310,10 @@ h1.detail-page {
     width: 100vw;
   }
 
+  .new-title-text {
+    width: 100vw;
+  }
+
   /* 詳細ページ */
   .detail-page {
     padding-top: 35px;
