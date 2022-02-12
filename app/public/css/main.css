@@ -321,4 +321,7 @@ h1.detail-page {
     width: 100vw;
   }
 
+  .edit-detail-textarea {
+    width: 100vw;
+  }
 }
