@@ -308,7 +308,13 @@ h1.detail-page {
 
   .goal-new-textarea {
     width: 100vw;
-    /* text-align: center; */
+  }
+
+  /* 詳細ページ */
+
+  /* 編集ページ */
+  .goal-edit-textarea {
+    width: 100vw;
   }
 
 }
