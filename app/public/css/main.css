@@ -311,6 +311,9 @@ h1.detail-page {
   }
 
   /* 詳細ページ */
+  .detail-page {
+    padding-top: 35px;
+  }
 
   /* 編集ページ */
   .goal-edit-textarea {
