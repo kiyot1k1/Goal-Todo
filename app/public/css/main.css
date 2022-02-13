@@ -332,7 +332,7 @@ h1.detail-page {
   }
 
   .detail-block {
-    width: 100%;
+    width: 90vw;
     margin: 0;
   }
   
@@ -341,7 +341,7 @@ h1.detail-page {
   }
   
   .detail-title-text {
-    width: 100vw;
+    width: 90vw;
   }
   
   .detail-detail {
@@ -349,7 +349,7 @@ h1.detail-page {
   }
   
   .detail-detail-textarea {
-    width: 100vw;
+    width: 90vw;
   }
   
   .detail-status {
