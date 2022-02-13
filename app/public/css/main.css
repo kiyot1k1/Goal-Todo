@@ -336,11 +336,11 @@ h1.detail-page {
     width: 100vw;
   }
 
-  .edit-title-text {
-    width: 100vw;
+  .edit-title {
+    font-size: 15px;
   }
-
-  .edit-detail-textarea {
+  
+  .edit-title-text {
     width: 100vw;
   }
 }
