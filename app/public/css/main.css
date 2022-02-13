@@ -317,6 +317,14 @@ h1.detail-page {
   .new-title-text {
     width: 100vw;
   }
+  
+  .new-detail {
+    font-size: 15px;
+  }
+  
+  .new-detail-textarea {
+    width: 100vw;
+  }
 
   /* 詳細ページ */
   .detail-page {
