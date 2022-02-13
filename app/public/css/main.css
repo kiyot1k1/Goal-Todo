@@ -337,7 +337,7 @@ h1.detail-page {
   }
   
   .detail-title {
-    font-size: 15px;
+    font-size: 18px;
   }
   
   .detail-title-text {
@@ -345,7 +345,7 @@ h1.detail-page {
   }
   
   .detail-detail {
-    font-size: 15px;
+    font-size: 18px;
   }
   
   .detail-detail-textarea {
@@ -353,7 +353,7 @@ h1.detail-page {
   }
   
   .detail-status {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   /* 編集ページ */
