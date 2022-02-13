@@ -333,7 +333,7 @@ h1.detail-page {
 
   .detail-block {
     width: 100vw;
-    margin: 0 auto;
+    margin: 0;
   }
   
   .detail-title {
