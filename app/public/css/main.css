@@ -343,4 +343,12 @@ h1.detail-page {
   .edit-title-text {
     width: 100vw;
   }
+  
+  .edit-detail {
+    font-size: 15px;
+  }
+  
+  .edit-detail-textarea {
+    width: 100vw;
+  }
 }
