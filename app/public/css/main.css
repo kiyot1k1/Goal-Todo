@@ -310,6 +310,10 @@ h1.detail-page {
     width: 100vw;
   }
 
+  .new-title {
+    font-size: 15px;
+  }
+  
   .new-title-text {
     width: 100vw;
   }
