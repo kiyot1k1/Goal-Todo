@@ -46,52 +46,55 @@ if (isset($_POST['todo_id'])) {
   </header>
 
   <main>
+
+  <a href="register.php">ユーザー登録</a>
+  <a href="login.php">ログイン</a>
       
-      <!-- 目標設定用 -->
-      <h2><a href="./view/todo/goal_new.php">目標設定</a></h2>
-  
-      <?php if ($error_msg): ?>
-        <div><?php echo $error_msg; ?></div>
-      <? endif; ?>
-      
-      <?php if ($goal_list): ?>
-        <ul class="list-group">
-          <?php foreach($goal_list as $goal): ?>
-            <li class="list-group-item"> 
-              <a href="./view/todo/goal_edit.php?goal_id=<?php echo $goal['id'] ?>" class="goal-list"><?php echo $goal['goal']; ?></a>
-              <div class="goal-delete-btn" data-id="<?php echo $goal['id']; ?>">
-                <button>削除</button>
-              </div>
-            </li>
-          <?php endforeach; ?> 
-        </ul>
-      <?php else: ?>
-        <p>No date.</p>
-      <?php endif; ?> 
-  
-  
-      <!-- ここからTODO用 -->
-      <h2><a href="./view/todo/new.php">TODO作成</a></h2>
-  
-      <?php if ($error_msg): ?>
-        <div><?php echo $error_msg; ?></div>
-      <? endif; ?>
-  
-      <?php if ($todo_list): ?>
-        <ul class="list-group">
-          <?php foreach($todo_list as $todo): ?>
-            <li class="list-group-item"> 
-              <input type="checkbox" class="todo-checkbox" data-id="<?php echo $todo['id']; ?>"<?php if ($todo['status']): ?>checked<?php endif; ?>>
-              <a href="./view/todo/detail.php?todo_id=<?php echo $todo['id'] ?>" class="todo-list"><?php echo $todo['title']; ?></a>
-              <div class="delete-btn" data-id="<?php echo $todo['id']; ?>">
-                <button>削除</button>
-              </div>
-            </li>
-          <?php endforeach; ?> 
-        </ul>
-      <?php else: ?>
-        <p>No date.</p>
-      <?php endif; ?> 
+    <!-- 目標設定用 -->
+    <h2><a href="./view/todo/goal_new.php">目標設定</a></h2>
+
+    <?php if ($error_msg): ?>
+      <div><?php echo $error_msg; ?></div>
+    <? endif; ?>
+    
+    <?php if ($goal_list): ?>
+      <ul class="list-group">
+        <?php foreach($goal_list as $goal): ?>
+          <li class="list-group-item"> 
+            <a href="./view/todo/goal_edit.php?goal_id=<?php echo $goal['id'] ?>" class="goal-list"><?php echo $goal['goal']; ?></a>
+            <div class="goal-delete-btn" data-id="<?php echo $goal['id']; ?>">
+              <button>削除</button>
+            </div>
+          </li>
+        <?php endforeach; ?> 
+      </ul>
+    <?php else: ?>
+      <p>No date.</p>
+    <?php endif; ?> 
+
+
+    <!-- ここからTODO用 -->
+    <h2><a href="./view/todo/new.php">TODO作成</a></h2>
+
+    <?php if ($error_msg): ?>
+      <div><?php echo $error_msg; ?></div>
+    <? endif; ?>
+
+    <?php if ($todo_list): ?>
+      <ul class="list-group">
+        <?php foreach($todo_list as $todo): ?>
+          <li class="list-group-item"> 
+            <input type="checkbox" class="todo-checkbox" data-id="<?php echo $todo['id']; ?>"<?php if ($todo['status']): ?>checked<?php endif; ?>>
+            <a href="./view/todo/detail.php?todo_id=<?php echo $todo['id'] ?>" class="todo-list"><?php echo $todo['title']; ?></a>
+            <div class="delete-btn" data-id="<?php echo $todo['id']; ?>">
+              <button>削除</button>
+            </div>
+          </li>
+        <?php endforeach; ?> 
+      </ul>
+    <?php else: ?>
+      <p>No date.</p>
+    <?php endif; ?> 
 
   </main>
 
