@@ -354,7 +354,7 @@ class UserController {
     $join->setName($name);
     $join->setMail($mail);
     $join->setPass($pass);
-    // $result = $join->save();
+    $result = $join->register();
   }
 
 }
