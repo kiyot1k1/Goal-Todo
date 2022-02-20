@@ -1,3 +1,13 @@
+<?php
+require_once(__DIR__ . '/controller/TodoController.php');
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $controller = new UserController();
+  $controller->join();
+  exit;
+}
+
+?>
 
 
 <!DOCTYPE html>
@@ -26,19 +36,19 @@
 
   <h1>ユーザー登録</h1>
   <form action="join.php" method="post">
-  <div>
-    <label>名前：<label>
-    <input type="text" name="name" required>
-  </div>
-  <div>
-    <label>メールアドレス：<label>
-    <input type="text" name="mail" required>
-  </div>
-  <div>
-    <label>パスワード：<label>
-    <input type="password" name="pass" required>
-  </div>
-  <input type="submit" value="ユーザー登録">
+    <div>
+      <label>名前：<label>
+      <input type="text" name="name" required>
+    </div>
+    <div>
+      <label>メールアドレス：<label>
+      <input type="text" name="mail" required>
+    </div>
+    <div>
+      <label>パスワード：<label>
+      <input type="password" name="pass" required>
+    </div>
+    <input type="submit" value="ユーザー登録">
   </form>
 
 </body>
