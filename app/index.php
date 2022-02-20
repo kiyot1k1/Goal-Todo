@@ -47,7 +47,7 @@ if (isset($_POST['todo_id'])) {
 
   <main>
 
-  <a href="register.php">ユーザー登録</a>
+  <a href="join.php">ユーザー登録</a>
   <a href="login.php">ログイン</a>
       
     <!-- 目標設定用 -->
