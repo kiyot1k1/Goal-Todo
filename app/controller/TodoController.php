@@ -341,3 +341,20 @@ class TodoController {
     return $result;
   }
 }
+
+
+// ここからユーザー管理用
+class UserController {
+  public function join() {
+    $name = $_POST['name'];
+    $mail = $_POST['mail'];
+    $pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
+
+    $join = new Join;
+    $join->setName($name);
+    $join->setMail($mail);
+    $join->setPass($pass);
+    // $result = $join->save();
+  }
+
+}
