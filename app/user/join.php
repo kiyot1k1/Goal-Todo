@@ -23,3 +23,23 @@
       <h1>目標とTODOの管理ツール</h1>
     </a>
   </header>
+
+  <h1>ユーザー登録</h1>
+  <form action="join.php" method="post">
+  <div>
+    <label>名前：<label>
+    <input type="text" name="name" required>
+  </div>
+  <div>
+    <label>メールアドレス：<label>
+    <input type="text" name="mail" required>
+  </div>
+  <div>
+    <label>パスワード：<label>
+    <input type="password" name="pass" required>
+  </div>
+  <input type="submit" value="ユーザー登録">
+  </form>
+
+</body>
+</html>
