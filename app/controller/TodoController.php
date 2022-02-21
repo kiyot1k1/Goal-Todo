@@ -350,10 +350,10 @@ class UserController {
     $mail = $_POST['mail'];
     $pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
 
-    $join = new User;
-    $join->setName($name);
-    $join->setMail($mail);
-    $join->setPass($pass);
+    $user = new User;
+    $user->setName($name);
+    $user->setMail($mail);
+    $user->setPass($pass);
 
     header("Location: https://goal-todo.herokuapp.com/index.php");
   }
