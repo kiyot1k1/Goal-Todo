@@ -360,4 +360,6 @@ class User {
   public function getPass() {
     return $this->pass;
   }
+
+  // エラー（重複）の場合はfalseを返して、コントローラーでエラー表示処理？
 }
