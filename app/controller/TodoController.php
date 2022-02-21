@@ -354,7 +354,8 @@ class UserController {
     $join->setName($name);
     $join->setMail($mail);
     $join->setPass($pass);
-    $result = $join->register();
+
+    header("Location: https://goal-todo.herokuapp.com/index.php");
   }
 
 }
