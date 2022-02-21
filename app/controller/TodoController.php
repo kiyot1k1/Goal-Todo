@@ -350,7 +350,7 @@ class UserController {
     $mail = $_POST['mail'];
     $pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
 
-    $join = new Join;
+    $join = new User;
     $join->setName($name);
     $join->setMail($mail);
     $join->setPass($pass);
