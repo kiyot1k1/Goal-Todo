@@ -361,5 +361,23 @@ class User {
     return $this->pass;
   }
 
+  public static function join() {
+    try {
+      $pdo = new PDO(DSN, USERNAME, PASSWORD);
+    } catch (PDOException $e) {
+      echo 'DB接続エラー： ' . $e->getMessage();
+    };
+
+    $query =  "SELECT COUNT(*) AS cnt FROM user WHERE mail = ?";
+    $stmh = $pdo->prepare($query);
+    $stmh->execute(array($_POST['mail']));
+    $record = $stmh->fetchAll(PDO::FETCH_ASSOC);
+    
+    if ($record['cnt'] > 0) {
+      $error['mail'] = 'duplicate';
+    }
+  }
+  
+
   // エラー（重複）の場合はfalseを返して、コントローラーでエラー表示処理？
 }
