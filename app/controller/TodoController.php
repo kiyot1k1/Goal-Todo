@@ -354,6 +354,20 @@ class UserController {
     $user->setName($name);
     $user->setMail($mail);
     $user->setPass($pass);
+    $result = $user->join();
+
+    // if ($result) === false) {
+    //   $error_msg = $validation->goal_getErrorMessage();
+
+     ➡︎sessionに保存して、join.phpでエラー表示
+ 
+    //   session_start();
+    //   $_SESSION['error_msg'] = $error_msg;
+
+    //   $params = sprintf("?goal_id=%s&goal=%s", $_POST['goal_id'], $_POST['goal']);
+    //   header(sprintf("Location: ./goal_edit.php%s", $params));
+    //   return;
+    // }
 
     header("Location: https://goal-todo.herokuapp.com/index.php");
   }
