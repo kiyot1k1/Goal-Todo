@@ -375,8 +375,10 @@ class User {
     
     if ($record['cnt'] > 0) {
       return false;
+    } else {
+      // 登録プログラム
+      // rerun true?
     }
   }
   
-  // thanks画面へ遷移
 }

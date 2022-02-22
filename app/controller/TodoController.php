@@ -357,8 +357,6 @@ class UserController {
     $result = $user->join();
 
     // if ($result) === false) {
-    //   $error_msg = $validation->goal_getErrorMessage();
-
      ➡︎sessionに保存して、join.phpでエラー表示
  
     //   session_start();
@@ -367,9 +365,11 @@ class UserController {
     //   $params = sprintf("?goal_id=%s&goal=%s", $_POST['goal_id'], $_POST['goal']);
     //   header(sprintf("Location: ./goal_edit.php%s", $params));
     //   return;
-    // }
+    // } else {
+      // header("Location: https://goal-todo.herokuapp.com/index.php");
+    ➡︎  // thanks画面へ遷移？
+    }
 
-    header("Location: https://goal-todo.herokuapp.com/index.php");
   }
 
 }
