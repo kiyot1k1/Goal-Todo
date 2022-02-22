@@ -374,10 +374,9 @@ class User {
     $record = $stmh->fetchAll(PDO::FETCH_ASSOC);
     
     if ($record['cnt'] > 0) {
-      $error['mail'] = 'duplicate';
+      return false;
     }
   }
   
-
   // エラー（重複）の場合はfalseを返して、コントローラーでエラー表示処理？
 }
