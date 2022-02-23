@@ -376,8 +376,23 @@ class User {
     if ($record['cnt'] > 0) {
       return false;
     } else {
-      // 登録プログラム
-      // rerun true?
+      try {
+        $pdo = new PDO(DSN, USERNAME, PASSWORD);
+        $query =  sprintf("INSERT INTO user (name, mail, pass) VALUES ('%s', '%s', '%s') ",
+                          $this->name,
+                          $this->mail,
+                          $this->pass
+                          );
+                        
+        $stmh = $pdo->prepare($query);
+        $stmh->execute();
+
+        return true;
+      } catch (Exception $e) {
+        error_log("登録に失敗しました。");
+        error_log($e->getMessage());
+        error_log($e->getTraceAsString());
+      };
     }
   }
   
