@@ -334,7 +334,7 @@ class Todo {
 class User {
 
   public $name;
-  public $email;
+  public $mail;
   public $pass;
 
   public function setName($name) {

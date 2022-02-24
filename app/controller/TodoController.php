@@ -356,16 +356,16 @@ class UserController {
     $user->setPass($pass);
     $result = $user->join();
 
-    // if ($result) === false) {
-     ➡︎sessionに保存して、join.phpでエラー表示
+    if ($result) === false) {
+    //  ➡︎sessionに保存して、join.phpでエラー表示
  
-    //   session_start();
-    //   $_SESSION['error_msg'] = $error_msg;
+      session_start();
+      $_SESSION['error_msg'] = "同じメールアドレスが登録されています。";
 
-    //   $params = sprintf("?goal_id=%s&goal=%s", $_POST['goal_id'], $_POST['goal']);
-    //   header(sprintf("Location: ./goal_edit.php%s", $params));
-    //   return;
-    // } else {
+      // $params = sprintf("?goal_id=%s&goal=%s", $_POST['goal_id'], $_POST['goal']);
+      // header(sprintf("Location: ./goal_edit.php%s", $params));
+      return;
+    } else {
       // header("Location: https://goal-todo.herokuapp.com/index.php");
     ➡︎  // thanks画面へ遷移？
     }
