@@ -379,9 +379,9 @@ class User {
       try {
         $pdo = new PDO(DSN, USERNAME, PASSWORD);
         $query =  sprintf("INSERT INTO user (name, mail, pass) VALUES ('%s', '%s', '%s') ",
-                          $this->name,
-                          $this->mail,
-                          $this->pass
+                          self::$name,
+                          self::$mail,
+                          self::$pass
                           );
                         
         $stmh = $pdo->prepare($query);

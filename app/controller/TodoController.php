@@ -359,11 +359,12 @@ class UserController {
     if ($result) === false) { 
       session_start();
       $_SESSION['error_msg'] = "同じメールアドレスが登録されています。";
-      // header("Location: https://goal-todo.herokuapp.com/index.php");
+      header("Location: https://goal-todo.herokuapp.com/index.php");
+      // ↑仮
       return;
     } else {
-      // header("Location: https://goal-todo.herokuapp.com/index.php");
-    ➡︎  // thanks画面へ遷移？
+      header("Location: https://goal-todo.herokuapp.com/index.php");
+      // ↑仮　thanks画面へ遷移？
     }
 
   }
