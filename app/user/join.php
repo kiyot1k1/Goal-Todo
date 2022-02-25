@@ -7,6 +7,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   exit;
 }
 
+$error_msg = '';
+session_start();
+if (isset($_SESSION['error_msg'])) {
+  $error_msg = $_SESSION['error_msg'];
+  unset($_SESSION['error_msg']);
+}
+
 ?>
 
 
