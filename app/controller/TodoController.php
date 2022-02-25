@@ -361,6 +361,9 @@ class UserController {
  
       session_start();
       $_SESSION['error_msg'] = "同じメールアドレスが登録されています。";
+      header("Location: https://goal-todo.herokuapp.com/index.php");
+      return;
+    }
 
       // $params = sprintf("?goal_id=%s&goal=%s", $_POST['goal_id'], $_POST['goal']);
       // header(sprintf("Location: ./goal_edit.php%s", $params));
