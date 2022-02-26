@@ -376,24 +376,17 @@ class User {
     if ($record['cnt'] > 0) {
       return false;
     } else {
-      try {
-        $pdo = new PDO(DSN, USERNAME, PASSWORD);
-        $query =  sprintf("INSERT INTO user (name, mail, pass) VALUES ('%s', '%s', '%s') ",
-                          self::$name,
-                          self::$mail,
-                          self::$pass
-                          );
-                        
-        $stmh = $pdo->prepare($query);
-        $stmh->execute();
+      $pdo = new PDO(DSN, USERNAME, PASSWORD);
+      $query =  sprintf("INSERT INTO user (name, mail, pass) VALUES ('%s', '%s', '%s') ",
+                        self::$name,
+                        self::$mail,
+                        self::$pass
+                        );
+                      
+      $stmh = $pdo->prepare($query);
+      $stmh->execute();
 
-        return true;
-      } catch (Exception $e) {
-        error_log("登録に失敗しました。");
-        error_log($e->getMessage());
-        error_log($e->getTraceAsString());
-      };
+      return true;
     }
   }
-  
 }
