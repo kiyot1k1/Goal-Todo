@@ -366,7 +366,5 @@ class UserController {
       header("Location: https://goal-todo.herokuapp.com/index.php");
       // ↑仮　thanks画面へ遷移？
     }
-
   }
-
 }
