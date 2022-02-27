@@ -369,8 +369,8 @@ class User {
     };
 
     $query =  "SELECT COUNT(*) AS cnt FROM user WHERE mail = ?";
-    $stmh = $pdo->prepare($query);
-    $stmh->execute(array($_POST['mail']));
+    $stmh = $pdo->query($query);
+    $stmh->execute();
     $record = $stmh->fetchAll(PDO::FETCH_ASSOC);
     
     if ($record['cnt'] > 0) {
@@ -383,7 +383,7 @@ class User {
                         self::$pass
                         );
                       
-      $stmh = $pdo->prepare($query);
+      $stmh = $pdo->query($query);
       $stmh->execute();
 
       return true;
