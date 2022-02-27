@@ -356,7 +356,7 @@ class UserController {
     $user->setPass($pass);
     $result = $user->join();
 
-    if ($result) === false) { 
+    if ($result === false) { 
       session_start();
       $_SESSION['error_msg'] = "同じメールアドレスが登録されています。";
       header("Location: https://goal-todo.herokuapp.com/index.php");
