@@ -376,7 +376,6 @@ class User {
     if ($record['cnt'] > 0) {
       return false;
     } else {
-      // $pdo = new PDO(DSN, USERNAME, PASSWORD);
       $query =  sprintf("INSERT INTO user (name, mail, pass) VALUES ('%s', '%s', '%s') ",
                         self::$name,
                         self::$mail,
