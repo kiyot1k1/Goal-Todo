@@ -28,6 +28,8 @@ require_once(__DIR__ . '/controller/TodoController.php');
     </a>
   </header>
 
+  <p>ユーザー登録が完了しました</p>
+  <p><a href="./login.php">ログインする</a></p>
 
 </body>
 </html>
