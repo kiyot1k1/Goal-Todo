@@ -348,7 +348,7 @@ class User {
   public function setPass($pass) {
     $this->pass = $pass;
   }
-  
+
 
   public static function join() {
     try {
@@ -365,7 +365,7 @@ class User {
     if ($record['cnt'] > 0) {
       return false;
     } else {
-      $query =  sprintf("INSERT INTO user (name, mail, pass) VALUES ('%s', '%s', '%s') ",
+      $query =  sprintf("INSERT INTO user (name, mail, password) VALUES ('%s', '%s', '%s') ",
                         self::$name,
                         self::$mail,
                         self::$pass
