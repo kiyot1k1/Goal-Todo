@@ -107,6 +107,13 @@ input[type="checkbox"] {
   padding-left: 8px;
 }
 
+
+/* ユーザー登録 */
+
+form {
+  margin: 0 auto;
+}
+
 /* 新規作成 */
 .goal-new-textarea {
   width: 600px;
