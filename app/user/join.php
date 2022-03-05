@@ -43,7 +43,7 @@ if (isset($_SESSION['error_msg'])) {
 
   <main>
     <h1>ユーザー登録</h1>
-    
+
     <form action="join.php" method="post">
       <div>
         <label>名前：<label>
@@ -57,7 +57,7 @@ if (isset($_SESSION['error_msg'])) {
         <label>パスワード：<label>
         <input type="password" name="pass" required>
       </div>
-      <input type="submit" value="ユーザー登録">
+      <input type="submit" value="登録">
     </form>
   </main>
 
