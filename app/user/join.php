@@ -47,11 +47,11 @@ if (isset($_SESSION['error_msg'])) {
     <form action="join.php" method="post">
       <dl>
         <dt>名前</dt>
-        <dd><input type="text" name="name" required></dd>
+        <dd><input type="text" name="name" size="35" maxlength="255" required></dd>
         <dt>メールアドレス</dt>
-        <dd><input type="text" name="mail" required></dd>
+        <dd><input type="text" name="mail" class="mail" size="35" maxlength="255" required></dd>
         <dt>パスワード</dt>
-        <dd><input type="password" name="pass" required></dd>
+        <dd><input type="password" name="pass" class="pass" size="10" maxlength="20" required></dd>
       </dl>
       <input type="submit" value="登録">
     </form>
