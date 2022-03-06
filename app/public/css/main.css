@@ -115,6 +115,10 @@ form {
   width: 310px;
 }
 
+dl {
+  margin-bottom: 8px;
+}
+
 /* 新規作成 */
 .goal-new-textarea {
   width: 600px;
