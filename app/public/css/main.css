@@ -60,10 +60,12 @@ main {
 /* トップページ */
 .user {
   color:black;
+  padding-left: auto;
 }
 
 .login {
   color:black;
+  padding-left: auto;
 }
 
 h2 {
