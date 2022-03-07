@@ -61,11 +61,13 @@ main {
 .user {
   color:black;
   margin-left: auto;
+  font-weight: bold;
 }
 
 .login {
   color:black;
   margin-left: auto;
+  font-weight: bold;
 }
 
 h2 {
