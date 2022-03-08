@@ -58,7 +58,14 @@ main {
 }
 
 /* トップページ */
-.user registration {
+.user {
+  font-size: 15px;
+  color:black;
+  margin-left: auto;
+  font-weight: bold;
+}
+
+/* .user-registration {
   color:black;
   margin-left: auto;
   font-weight: bold;
@@ -68,7 +75,7 @@ main {
   color:black;
   margin-left: auto;
   font-weight: bold;
-}
+} */
 
 h2 {
   font-size: 20px;
