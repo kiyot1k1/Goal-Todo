@@ -58,24 +58,24 @@ main {
 }
 
 /* トップページ */
-.user {
+/* .user {
   font-size: 15px;
   color:black;
   margin-left: auto;
   font-weight: bold;
-}
+} */
 
-/* .user-registration {
+.user-registration {
   color:black;
   margin-left: auto;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .login {
   color:black;
-  margin-left: auto;
-  font-weight: bold;
-} */
+  margin-left: 10px;
+  /* font-weight: bold; */
+}
 
 h2 {
   font-size: 20px;
@@ -127,7 +127,6 @@ input[type="checkbox"] {
 }
 
 /* ユーザー登録 */
-
 form {
   margin: 10px auto 0;
   width: 310px;
