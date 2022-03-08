@@ -66,15 +66,17 @@ main {
 } */
 
 .user-registration {
+  font-size: 15px;
   color:black;
-  margin-left: auto;
-  /* font-weight: bold; */
+  margin-left: 15px;
+  font-weight: bold;
 }
 
 .login {
+  font-size: 15px;
   color:black;
   margin-left: 10px;
-  /* font-weight: bold; */
+  font-weight: bold;
 }
 
 h2 {
