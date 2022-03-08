@@ -289,19 +289,20 @@ h1.detail-page {
     margin: 0 auto; 
   }
 
-/* トップページ */
-.user-registration {
-  margin-left: 45px;
-}
+  /* トップページ */
+  .user-registration {
+    font-size: 13px;
+    margin-left: 45px;
+  }
 
-.login {
-  margin-left: 45px;
-}
+  .login {
+    font-size: 13px;
+  }
 
   h2 {
     font-size: 15px;
     text-align: center;
-    margin: 110px auto 8px;
+    margin: 30px auto 8px;
   }  
 
   .list-group {
