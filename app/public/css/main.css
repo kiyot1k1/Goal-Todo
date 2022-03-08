@@ -58,25 +58,20 @@ main {
 }
 
 /* トップページ */
-/* .user {
-  font-size: 15px;
-  color:black;
-  margin-left: auto;
-  font-weight: bold;
-} */
-
 .user-registration {
   font-size: 15px;
   color: rgb(50, 50, 50);
-  margin-left: 40px;
+  margin-left: 20px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .login {
   font-size: 15px;
   color: rgb(50, 50, 50);
-  margin-left: 10px;
+  margin-left: 20px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 h2 {
@@ -295,6 +290,14 @@ h1.detail-page {
   }
 
 /* トップページ */
+.user-registration {
+  margin-left: 45px;
+}
+
+.login {
+  margin-left: 45px;
+}
+
   h2 {
     font-size: 15px;
     text-align: center;
