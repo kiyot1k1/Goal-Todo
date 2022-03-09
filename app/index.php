@@ -47,8 +47,10 @@ if (isset($_POST['todo_id'])) {
 
   <main>
     
-    <a href="./user/join.php" class="user-registration">ユーザー登録</a>
-    <a href="./user/login.php" class="login">ログイン</a>
+    <div class="user">
+      <a href="./user/join.php" class="user-registration">ユーザー登録</a>
+      <a href="./user/login.php" class="login">ログイン</a>
+    </div>
       
     <!-- 目標設定用 -->
     <h2><a href="./view/todo/goal_new.php">目標設定</a></h2>
