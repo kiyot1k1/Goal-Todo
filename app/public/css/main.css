@@ -297,6 +297,7 @@ h1.detail-page {
   /* トップページ */
   .user {
     width: 90vw;
+    margin: 0 auto;
   }
 
   .user-registration {
