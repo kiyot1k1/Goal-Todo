@@ -58,6 +58,11 @@ main {
 }
 
 /* トップページ */
+.user {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #edf2ff;
+}
+
 .user-registration {
   font-size: 15px;
   color: rgb(50, 50, 50);
