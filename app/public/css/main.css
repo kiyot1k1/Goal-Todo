@@ -298,6 +298,7 @@ h1.detail-page {
   .user {
     width: 90vw;
     margin: 0 auto;
+    border-bottom: 3px solid #ffffff;
   }
 
   .user-registration {
