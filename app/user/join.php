@@ -44,7 +44,7 @@ if (isset($_SESSION['error_msg'])) {
   <main>
     <h1>ユーザー登録</h1>
 
-    <form action="join.php" method="post">
+    <form action="join.php" method="post" class="join-form">
       <dl>
         <dt>名前</dt>
         <dd><input type="text" name="name" size="35" maxlength="255" required></dd>
