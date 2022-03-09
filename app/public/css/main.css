@@ -295,6 +295,10 @@ h1.detail-page {
   }
 
   /* トップページ */
+  .user {
+    width: 90vw;
+  }
+
   .user-registration {
     font-size: 13px;
     margin-left: 45px;
