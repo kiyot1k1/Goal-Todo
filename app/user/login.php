@@ -42,18 +42,16 @@ if (isset($_SESSION['error_msg'])) {
   </header>
 
   <main>
-    <h1>ユーザー登録</h1>
+    <h1>ログインページ</h1>
 
     <form action="join.php" method="post" class="join-form">
       <dl>
-        <dt>名前</dt>
-        <dd><input type="text" name="name" size="35" maxlength="255" required></dd>
         <dt>メールアドレス</dt>
         <dd><input type="text" name="mail" class="mail" size="35" maxlength="255" required></dd>
         <dt>パスワード</dt>
         <dd><input type="password" name="pass" class="pass" size="10" maxlength="20" required></dd>
       </dl>
-      <input type="submit" value="登録">
+      <input type="submit" value="ログイン">
     </form>
   </main>
 
