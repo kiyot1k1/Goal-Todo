@@ -364,4 +364,26 @@ class UserController {
       header("Location: ./../user/thanks.php");
     }
   }
+
+  public function login() {
+    $mail = $_POST['mail'];
+    $pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
+
+    if ($_POST['mail'] != '' && $_POST['password'] != '') {
+      $user = new User;
+      $user->setMail($mail);
+      $user->setPass($pass);
+      $result = $user->login();
+    } else {
+      // エラー処理
+    }
+
+    if ($result === false) { 
+      session_start();
+      $_SESSION['error_msg'] = "ログインに失敗しました。再度やり直してください。";
+      return;
+    } else {
+      header("Location: https://goal-todo.herokuapp.com/index.php");
+    }
+  }
 }
