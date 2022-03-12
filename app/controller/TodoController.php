@@ -375,7 +375,9 @@ class UserController {
       $user->setPass($pass);
       $result = $user->login();
     } else {
-      // エラー処理
+      session_start();
+      $_SESSION['error_msg'] = "メールアドレスとパスワードをご記入ください。";
+      return;
     }
 
     if ($result === false) { 
