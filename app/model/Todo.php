@@ -391,7 +391,7 @@ class User {
     
     if ($member) {
       $_SESSION['id'] = $member['id'];
-      $_SESSION['time'] = time();
+      $_SESSION['name'] = $member['name'];
       return true;
     } else {
       return false;
