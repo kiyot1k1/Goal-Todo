@@ -349,7 +349,6 @@ class User {
     $this->pass = $pass;
   }
 
-
   public static function join() {
     try {
       $pdo = new PDO(DSN, USERNAME, PASSWORD);
@@ -376,6 +375,7 @@ class User {
 
       return true;
     }
+  }
 
   public static function login() {
     try {
