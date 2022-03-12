@@ -376,5 +376,25 @@ class User {
 
       return true;
     }
+
+  public static function login() {
+    try {
+      $pdo = new PDO(DSN, USERNAME, PASSWORD);
+    } catch (PDOException $e) {
+      echo 'DB接続エラー： ' . $e->getMessage();
+    };
+
+    $query =  "SELECT * FROM user WHERE mail = ? AND password = ?";
+    $stmh = $pdo->query($query);
+    $stmh->execute();
+    $member = $stmh->fetchAll(PDO::FETCH_ASSOC);
+    
+    if ($member) {
+      $_SESSION['id'] = $member['id'];
+      $_SESSION['time'] = time();
+      return true;
+    } else {
+      return false;
+    }
   }
 }
