@@ -390,9 +390,7 @@ class User {
     $member = $stmh->fetchAll(PDO::FETCH_ASSOC);
     
     if ($member) {
-      $_SESSION['id'] = $member['id'];
-      $_SESSION['name'] = $member['name'];
-      return true;
+      return $member;
     } else {
       return false;
     }
