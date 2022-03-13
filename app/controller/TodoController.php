@@ -385,7 +385,9 @@ class UserController {
       $_SESSION['error_msg'] = "ログインに失敗しました。再度やり直してください。";
       return;
     } else {
-      // Todo．phpからのセッションを返す必要あり？
+      session_start();
+      $_SESSION['id'] = $result['id'];
+      $_SESSION['name'] = $result['name'];
       header("Location: https://goal-todo.herokuapp.com/index.php");
     }
   }
