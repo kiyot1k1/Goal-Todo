@@ -59,6 +59,8 @@ if (isset($_POST['todo_id'])) {
     <div><?php echo $msg; ?></div>
   <? endif; ?>    
 
+  <a href="./user/logout.php">ログアウト</a>
+
     <div class="user">
       <a href="./user/join.php" class="user-registration">ユーザー登録</a>
       <a href="./user/login.php" class="login">ログイン</a>
