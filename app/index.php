@@ -14,6 +14,14 @@ if (isset($_SESSION['error_msgs'])) {
   unset($_SESSION['error_msgs']);
 }
 
+$username = $_SESSION['name'];
+if (isset($_SESSION['id']) && $_SESSION['time'] + 3600 > time()) {
+  $_SESSION['time'] = time();
+  $msg = 'ようこそ' . htmlspecialchars($username, ENT_QUOTES) . 'さん';
+} else {
+  $msg = 'ログインしてください';
+}
+
 if (isset($_POST['todo_id'])) {
   $todo_id = $_POST['todo_id'];
 }
