@@ -17,7 +17,7 @@ if (isset($_SESSION['error_msgs'])) {
 $username = $_SESSION['name'];
 if (isset($_SESSION['id']) && $_SESSION['time'] + 3600 > time()) {
   $_SESSION['time'] = time();
-  $msg = 'ようこそ' . htmlspecialchars($username, ENT_QUOTES) . 'さん';
+  $msg = 'ようこそ' . htmlspecialchars($username, ENT_QUOTES) . 'さん。TODOを管理して、目標を達成しましょう！';
 } else {
   $msg = 'ログインしてください';
 }
@@ -54,7 +54,11 @@ if (isset($_POST['todo_id'])) {
   </header>
 
   <main>
-    
+
+  <?php if ($msg): ?>
+    <div><?php echo $msg; ?></div>
+  <? endif; ?>    
+
     <div class="user">
       <a href="./user/join.php" class="user-registration">ユーザー登録</a>
       <a href="./user/login.php" class="login">ログイン</a>
