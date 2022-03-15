@@ -18,6 +18,7 @@ $username = $_SESSION['name'];
 if (isset($_SESSION['id']) && $_SESSION['time'] + 3600 > time()) {
   $_SESSION['time'] = time();
   $msg = 'ようこそ' . htmlspecialchars($username, ENT_QUOTES) . 'さん。TODOを管理して、目標を達成しましょう！';
+  $logout = '<a href="./user/logout.php">ログアウト</a>';
 } else {
   $msg = 'ログインしてください';
 }
@@ -55,11 +56,15 @@ if (isset($_POST['todo_id'])) {
 
   <main>
 
-  <?php if ($msg): ?>
-    <div><?php echo $msg; ?></div>
-  <? endif; ?>    
+  <div class="top-msg">
+    <?php if ($msg): ?>
+      <div><?php echo $msg; ?></div>
+    <? endif; ?>    
 
-  <a href="./user/logout.php">ログアウト</a>
+    <?php if ($logout): ?>
+      <div><?php echo $logout; ?></div>
+    <? endif; ?>  
+  </div>
 
     <div class="user">
       <a href="./user/join.php" class="user-registration">ユーザー登録</a>
