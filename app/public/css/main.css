@@ -310,6 +310,7 @@ h1.detail-page {
 
   /* トップページ */
   .top-msg {
+    width: 90vw;
     font-size: 13px;
     margin-left: 45px;
     margin-bottom: 0;
