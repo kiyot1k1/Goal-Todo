@@ -66,6 +66,11 @@ main {
   text-decoration: none;
 }
 
+.top-logout {
+  margin-left: auto;
+  padding-left: 10px;
+}
+
 .user {
   padding-bottom: 5px;
   border-bottom: 5px solid #ffffff;
