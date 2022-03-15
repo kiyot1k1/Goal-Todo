@@ -58,6 +58,13 @@ main {
 }
 
 /* トップページ */
+.top-msg {
+  font-size: 15px;
+  color: rgb(50, 50, 50);
+  margin: 0 auto;
+  text-decoration: none;
+}
+
 .user {
   padding-bottom: 5px;
   border-bottom: 5px solid #ffffff;
