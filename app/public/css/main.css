@@ -308,6 +308,10 @@ h1.detail-page {
   }
 
   /* トップページ */
+  .top-msg {
+    font-size: 13px;
+  }
+
   .user {
     width: 90vw;
     margin: 0 auto;
