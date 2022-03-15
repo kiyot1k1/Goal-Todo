@@ -61,7 +61,8 @@ main {
 .top-msg {
   font-size: 15px;
   color: rgb(50, 50, 50);
-  margin: 0 auto;
+  margin-left: 20px;
+  margin-bottom: 10px;
   text-decoration: none;
 }
 
@@ -310,6 +311,8 @@ h1.detail-page {
   /* トップページ */
   .top-msg {
     font-size: 13px;
+    margin-left: 45px;
+    margin-bottom: 0;
   }
 
   .user {
