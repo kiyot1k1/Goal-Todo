@@ -97,9 +97,7 @@ if (isset($_POST['todo_id'])) {
     <!-- ここからTODO用 -->
     <h2><a href="./view/todo/new.php">TODO作成</a></h2>
 
-    <?php if ($error_msg): ?>
-      <div><?php echo $error_msg; ?></div>
-    <? endif; ?>
+    <div><?php echo $error_msg; ?></div>
 
     <?php if ($todo_list): ?>
       <ul class="list-group">
