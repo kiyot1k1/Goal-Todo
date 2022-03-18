@@ -389,7 +389,7 @@ class UserController {
       $_SESSION['id'] = $result['id'];
       $_SESSION['name'] = $result['name'];
       $_SESSION['time'] = time();
-      header("Location: https://goal-todo.herokuapp.com/index.php");
+      return;
     }
   }
 }
