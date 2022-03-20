@@ -67,7 +67,7 @@ if (isset($_POST['todo_id'])) {
       <a href="./user/login.php" class="login">ログイン</a>
     </div>
       
-    <!-- 目標設定用 -->
+    <!-- 目標設定 -->
     <h2><a href="./view/todo/goal_new.php">目標設定</a></h2>
 
     <?php if ($error_msg): ?>
@@ -90,7 +90,7 @@ if (isset($_POST['todo_id'])) {
     <?php endif; ?> 
 
 
-    <!-- ここからTODO用 -->
+    <!-- ここからTODO -->
     <h2><a href="./view/todo/new.php">TODO作成</a></h2>
 
     <?php if ($error_msg): ?>
