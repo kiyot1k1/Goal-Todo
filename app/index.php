@@ -118,7 +118,7 @@ if (isset($_POST['todo_id'])) {
 
   <script src="./public/js/jquery-3.6.0.min.js"></script>
   <script>
-  //目標設定用
+  //目標設定
     $(".goal-delete-btn").click(function() {
       if (confirm("削除してもよろしいですか？")) {
         let goal_id = $(this).data('id');
@@ -152,7 +152,7 @@ if (isset($_POST['todo_id'])) {
     });
 
 
-  //ここからTODO用
+  //ここからTODO
     $(".delete-btn").click(function() {
       if (confirm("削除してもよろしいですか？")) {
         let todo_id = $(this).data('id');
