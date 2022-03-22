@@ -40,7 +40,7 @@ if (isset($_SESSION['error_msg'])) {
           <img src="./../../img/Todolist.jpg" alt="TODOの写真" class="todo-pic">
         </div>
       </div>
-      <h1>目標とTODOの管理ツール</h1>
+      <h1>目標とTODOの管理アプリ</h1>
     </a>
   </header>
   
