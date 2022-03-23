@@ -269,8 +269,8 @@ h1.detail-page {
 
 /* レスポンシブデザイン */
 
-/* 全体 */
 @media (max-width: 767px) {
+  /* 全体 */
   body {
     background: radial-gradient(rgb(223, 238, 250), rgba(9, 111, 174, 0.75));
     background-size: contain; 
@@ -373,7 +373,7 @@ h1.detail-page {
     padding-left: 4px;
   }
 
-/* 新規作成 */
+  /* 新規作成 */
   h1 {
     font-size: 15px;
     text-align: center;
@@ -400,7 +400,7 @@ h1.detail-page {
     width: 100vw;
   }
 
-/* 詳細ページ */
+  /* 詳細ページ */
   .detail-page {
     padding-top: 30px;
   }
@@ -429,7 +429,7 @@ h1.detail-page {
     font-size: 18px;
   }
 
-/* 編集ページ */
+  /* 編集ページ */
   .goal-edit-textarea {
     width: 100vw;
   }
