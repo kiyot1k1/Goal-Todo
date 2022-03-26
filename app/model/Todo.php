@@ -358,7 +358,7 @@ class User {
 
     $query =  "SELECT COUNT(*) AS cnt FROM user WHERE mail = ?";
     $stmh = $pdo->query($query);
-    $stmh->execute();
+    // $stmh->execute();
     $record = $stmh->fetchAll(PDO::FETCH_ASSOC);
     
     if ($record['cnt'] > 0) {
@@ -386,7 +386,7 @@ class User {
 
     $query =  "SELECT * FROM user WHERE mail = ? AND password = ?";
     $stmh = $pdo->query($query);
-    $stmh->execute();
+    // $stmh->execute();
     $member = $stmh->fetchAll(PDO::FETCH_ASSOC);
     
     if ($member) {
