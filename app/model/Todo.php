@@ -360,7 +360,7 @@ class User {
     $query =  "SELECT FROM user WHERE mail = ?";
     $stmh = $pdo->query($query);
     // $stmh->execute(array($_POST['mail']));
-    $record = $stmh->fetch();
+    $record = $stmh->fetchAll(PDO::FETCH_ASSOC);
 
     // var_dump($stmh);
     // exit;
