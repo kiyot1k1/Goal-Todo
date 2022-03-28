@@ -355,8 +355,8 @@ class User {
     } catch (PDOException $e) {
       echo 'DB接続エラー： ' . $e->getMessage();
     };
-    var_dump($pdo);
-    exit;
+    // var_dump($pdo);
+    // exit;
 
     // $query =  "SELECT COUNT(*) AS cnt FROM user WHERE mail = ?";
     $query =  "SELECT FROM user WHERE mail = ?";
