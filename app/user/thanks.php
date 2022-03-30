@@ -1,9 +1,3 @@
-<?php
-require_once(__DIR__ . '/controller/TodoController.php');
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
