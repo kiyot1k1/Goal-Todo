@@ -151,6 +151,11 @@ dl {
   margin-bottom: 8px;
 }
 
+/* 登録後ページ */
+.thanks {
+  margin: 0 auto;
+}
+
 /* ログイン */
 .login-form {
   margin: 10px auto 0;
