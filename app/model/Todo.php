@@ -333,9 +333,9 @@ class Todo {
 // ここからユーザー管理用
 class User {
 
-  static public $name;
-  static public $mail;
-  static public $pass;
+  public $name;
+  public $mail;
+  public $pass;
 
   public function setName($name) {
     $this->name = $name;
