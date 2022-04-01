@@ -362,13 +362,13 @@ class User {
     $stmh->execute();
     $record = $stmh->fetchAll(PDO::FETCH_ASSOC);
     
-    if ($record['mail'] = User::$name) {
+    if ($record['mail'] = self::$name) {
       return false;
     } else {
       $query =  sprintf("INSERT INTO user (name, mail, password) VALUES ('%s', '%s', '%s') ",
-                        User::$name,
-                        User::$mail,
-                        User::$pass
+                        self::$name,
+                        self::$mail,
+                        self::$pass
                         );
                       
       $stmh = $pdo->query($query);
