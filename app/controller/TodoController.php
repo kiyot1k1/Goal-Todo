@@ -346,9 +346,9 @@ class TodoController {
 // ここからユーザー管理用
 class UserController {
   public function join() {
-    $name = '';
-    $mail = '';
-    $pass = '';
+    // $name = '';
+    // $mail = '';
+    // $pass = '';
 
     if (isset($_POST['name'])) {
       $name = $_POST['name'];
