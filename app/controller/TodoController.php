@@ -350,22 +350,23 @@ class UserController {
     // $mail = '';
     // $pass = '';
 
-    if (isset($_POST['name'])) {
-      $name = $_POST['name'];
-    }
-    if (isset($_POST['mail'])) {
-      $mail = $_POST['mail'];
-    }
-    if (isset($_POST['pass'])) {
-      $pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
-    }
+    // if (isset($_POST['name'])) {
+    //   $name = $_POST['name'];
+    // }
+    // if (isset($_POST['mail'])) {
+    //   $mail = $_POST['mail'];
+    // }
+    // if (isset($_POST['pass'])) {
+    //   $pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
+    // }
+
+    $name = $_POST['name'];
+    $mail = $_POST['mail'];
+    $pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
+
 
     var_dump($name);
     exit;
-
-    // $name = $_POST['name'];
-    // $mail = $_POST['mail'];
-    // $pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
 
     $user = new User;
     $user->setName($name);
