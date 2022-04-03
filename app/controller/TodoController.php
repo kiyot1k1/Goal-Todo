@@ -364,10 +364,6 @@ class UserController {
     $mail = $_POST['mail'];
     $pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
 
-
-    var_dump($name);
-    exit;
-
     $user = new User;
     $user->setName($name);
     $user->setMail($mail);
