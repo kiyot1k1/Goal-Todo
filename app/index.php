@@ -14,7 +14,10 @@ if (isset($_SESSION['error_msgs'])) {
   unset($_SESSION['error_msgs']);
 }
 
-$username = $_SESSION['name'];
+if (isset($_SESSION['name'])) {
+  $username = $_SESSION['name'];
+}
+
 if (isset($_SESSION['id']) && $_SESSION['time'] + 3600 > time()) {
   $_SESSION['time'] = time();
   $msg = 'ようこそ' . htmlspecialchars($username, ENT_QUOTES) . 'さん。TODOを管理して、目標を達成しましょう！';
