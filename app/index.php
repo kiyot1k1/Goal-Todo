@@ -24,6 +24,7 @@ if (isset($_SESSION['id']) && $_SESSION['time'] + 3600 > time()) {
   $logout = '<a href="./user/logout.php">ログアウト</a>';
 } else {
   $msg = '※ログインして下さい';
+  $logout = '';
 }
 
 if (isset($_POST['todo_id'])) {
