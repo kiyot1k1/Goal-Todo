@@ -356,9 +356,6 @@ class User {
       echo 'DB接続エラー： ' . $e->getMessage();
     };
 
-    return self::$name;
-    exit;
-
     // $query =  "SELECT COUNT(*) AS cnt FROM user WHERE mail = ?";
     $query =  "SELECT * FROM user WHERE mail = ?";
     $stmh = $pdo->prepare($query);
