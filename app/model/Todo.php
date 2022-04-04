@@ -333,7 +333,7 @@ class Todo {
 // ここからユーザー管理用
 class User {
 
-  public $name;
+  public static $name;
   public static $mail;
   public static $pass;
 
@@ -356,7 +356,7 @@ class User {
       echo 'DB接続エラー： ' . $e->getMessage();
     };
 
-    return self::$name;
+    return $this->name;
     exit;
 
     // $query =  "SELECT COUNT(*) AS cnt FROM user WHERE mail = ?";
