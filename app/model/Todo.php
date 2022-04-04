@@ -338,15 +338,15 @@ class User {
   public static $pass;
 
   public function setName($name) {
-    $this->name = $name;
+    self::$name = $name;
   }
   
   public function setMail($mail) {
-    $this->mail = $mail;
+    self::$mail = $mail;
   }
 
   public function setPass($pass) {
-    $this->pass = $pass;
+    self::$pass = $pass;
   }
 
   public static function join() {
