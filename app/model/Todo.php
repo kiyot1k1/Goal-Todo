@@ -356,7 +356,7 @@ class User {
       echo 'DB接続エラー： ' . $e->getMessage();
     };
 
-    return $this->name;
+    return self::$name;
     exit;
 
     // $query =  "SELECT COUNT(*) AS cnt FROM user WHERE mail = ?";
