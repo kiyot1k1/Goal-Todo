@@ -357,7 +357,7 @@ class User {
     };
 
     // $query =  "SELECT COUNT(*) AS cnt FROM user WHERE mail = ?";
-    $query =  "SELECT * FROM user WHERE mail = ?";
+    $query =  "SELECT * FROM user";
     $stmh = $pdo->query($query);
     $record = $stmh->fetchAll(PDO::FETCH_ASSOC);
     
