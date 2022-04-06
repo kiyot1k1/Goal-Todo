@@ -360,6 +360,8 @@ class User {
     $query =  "SELECT * FROM user";
     $stmh = $pdo->query($query);
     $record = $stmh->fetchAll(PDO::FETCH_ASSOC);
+
+    return $record;
     
     if ($record['mail'] = self::$mail) {
       return false;
