@@ -370,9 +370,6 @@ class UserController {
     $user->setPass($pass);
     $result = $user->join();
 
-    var_dump($result);
-    exit;
-
     if ($result === false) { 
       session_start();
       $_SESSION['error_msg'] = "同じメールアドレスが登録されています。";

@@ -357,15 +357,12 @@ class User {
     };
 
     $query =  "SELECT COUNT(*) AS cnt FROM user WHERE mail = ?";
-    // $query =  "SELECT * FROM user WHERE mail = ?";
     $stmh = $pdo->prepare($query);
     $stmh->bindParam(1, self::$mail);
     $stmh->execute();
     $record = $stmh->fetchAll(PDO::FETCH_ASSOC);
-
-    return $record;
     
-    if ($record['mail'] = self::$mail) {
+    if ($record['cnt'] > 0) {
       return false;
     } else {
       $query =  sprintf("INSERT INTO user (name, mail, password) VALUES ('%s', '%s', '%s') ",
