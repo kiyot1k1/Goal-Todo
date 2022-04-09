@@ -356,13 +356,13 @@ class User {
       echo 'DB接続エラー： ' . $e->getMessage();
     };
 
-    $query =  "SELECT COUNT(*) AS cnt FROM user WHERE mail = ?";
+    $query =  "SELECT * FROM user WHERE mail = ?";
     $stmh = $pdo->prepare($query);
     $stmh->bindParam(1, self::$mail);
     $stmh->execute();
     $record = $stmh->fetchAll(PDO::FETCH_ASSOC);
     
-    if ($record['cnt'] > 0) {
+    if ($record['mail'] === self::$mail) {
       return false;
     } else {
       $query =  sprintf("INSERT INTO user (name, mail, password) VALUES ('%s', '%s', '%s') ",
