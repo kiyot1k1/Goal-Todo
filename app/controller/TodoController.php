@@ -346,20 +346,6 @@ class TodoController {
 // ここからユーザー管理用
 class UserController {
   public function join() {
-    // $name = '';
-    // $mail = '';
-    // $pass = '';
-
-    // if (isset($_POST['name'])) {
-    //   $name = $_POST['name'];
-    // }
-    // if (isset($_POST['mail'])) {
-    //   $mail = $_POST['mail'];
-    // }
-    // if (isset($_POST['pass'])) {
-    //   $pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
-    // }
-
     $name = $_POST['name'];
     $mail = $_POST['mail'];
     $pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
@@ -369,9 +355,6 @@ class UserController {
     $user->setMail($mail);
     $user->setPass($pass);
     $result = $user->join();
-
-    var_dump($result);
-    exit;
 
     if ($result === false) { 
       session_start();
