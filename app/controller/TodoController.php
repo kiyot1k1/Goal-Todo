@@ -376,13 +376,13 @@ class UserController {
       $result = $user->login();
     } else {
       session_start();
-      $_SESSION['error_msg'] = "メールアドレスとパスワードをご記入ください。";
+      $_SESSION['error_msg'] = "メールアドレスとパスワードをご記入下さい。";
       return;
     }
 
     if ($result === false) { 
       session_start();
-      $_SESSION['error_msg'] = "ログインに失敗しました。再度やり直してください。";
+      $_SESSION['error_msg'] = "ログインに失敗しました。再度やり直して下さい。";
       return;
     } else {
       session_start();
