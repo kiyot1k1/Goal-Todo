@@ -358,7 +358,7 @@ class User {
 
     $query =  "SELECT * FROM user WHERE mail = ?";
     $stmh = $pdo->prepare($query);
-    $stmh->bindParam(1, self::$mail);
+    $stmh->bindValue(1, self::$mail);
     $stmh->execute();
     $record = $stmh->fetchAll(PDO::FETCH_ASSOC);
 
