@@ -361,13 +361,11 @@ class User {
     $stmh->bindValue(1, self::$mail);
     $stmh->execute();
     $record = $stmh->fetchAll(PDO::FETCH_ASSOC);
-
-    return $record;
     
     if ($record['mail'] === self::$mail) {
       return false;
     } else {
-      $query =  sprintf("INSERT INTO user (name, mail, password) VALUES ('%s', '%s', '%s') ",
+      $query =  sprintf("INSERT INTO user (name, mail, password, created_at) VALUES ('%s', '%s', '%s', now()) ",
                         self::$name,
                         self::$mail,
                         self::$pass
