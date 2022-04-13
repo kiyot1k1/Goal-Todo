@@ -365,10 +365,11 @@ class User {
     if ($record['mail'] === self::$mail) {
       return false;
     } else {
-      $query =  sprintf("INSERT INTO user (name, mail, password, created_at) VALUES ('%s', '%s', '%s', now()) ",
+      $query =  sprintf("INSERT INTO user (name, mail, password, created_at) VALUES ('%s', '%s', '%s', '%s') ",
                         self::$name,
                         self::$mail,
-                        self::$pass
+                        self::$pass,
+                        date("Y-m-d H:i:s")
                         );
                       
       $stmh = $pdo->query($query);
