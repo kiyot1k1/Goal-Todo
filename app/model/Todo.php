@@ -374,7 +374,7 @@ class User {
                       
       $stmh = $pdo->query($query);
 
-      return $stmh;
+      return true;
     }
   }
 
