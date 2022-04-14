@@ -45,7 +45,9 @@ if (isset($_SESSION['error_msg'])) {
     <h1>ユーザー登録</h1>
 
     <?php if ($error_msg): ?>
-      <div><?php echo $error_msg; ?></div>
+      <ul>
+        <li><?php echo $error_msg; ?></li>
+      </ul>
     <? endif; ?>
 
     <form action="join.php" method="post" class="join-form">
