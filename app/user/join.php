@@ -45,8 +45,8 @@ if (isset($_SESSION['error_msg'])) {
     <h1>ユーザー登録</h1>
 
     <?php if ($error_msg): ?>
-      <ul>
-        <li class="error-msg"><?php echo $error_msg; ?></li>
+      <ul class="error-msg">
+        <li><?php echo $error_msg; ?></li>
       </ul>
     <? endif; ?>
 
