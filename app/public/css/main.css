@@ -156,6 +156,10 @@ dl {
   text-align: center;
 }
 
+.error-msg {
+  text-align: center;
+}
+
 /* ログイン */
 .login-form {
   margin: 10px auto 0;

@@ -46,7 +46,7 @@ if (isset($_SESSION['error_msg'])) {
 
     <?php if ($error_msg): ?>
       <ul>
-        <li><?php echo $error_msg; ?></li>
+        <li class="error-msg"><?php echo $error_msg; ?></li>
       </ul>
     <? endif; ?>
 
