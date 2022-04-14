@@ -359,6 +359,7 @@ class UserController {
     if ($result === false) { 
       session_start();
       $_SESSION['error_msg'] = "同じメールアドレスが登録されています。";
+      header("Location: ./../user/join.php");
       return;
     } else {
       header("Location: ./../user/thanks.php");
