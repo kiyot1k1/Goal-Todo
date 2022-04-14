@@ -44,6 +44,14 @@ if (isset($_SESSION['error_msg'])) {
   <main>
     <h1>ログインページ</h1>
 
+    <?php if ($error_msg): ?>
+      <div class="error-msg">
+        <ul>
+          <li><?php echo $error_msg; ?></li>
+        </ul>
+      </div>
+    <? endif; ?>
+
     <form action="join.php" method="post" class="login-form">
       <dl>
         <dt>メールアドレス</dt>
