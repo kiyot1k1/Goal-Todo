@@ -362,8 +362,7 @@ class User {
     $stmh->execute();
     $record = $stmh->fetchAll(PDO::FETCH_ASSOC);
 
-    // return $record;
-    // 前回の登録ができているか？できていたら、下記条件の要変更？
+    return $record;
     
     if ($record['mail'] === self::$mail) {
       return false;
