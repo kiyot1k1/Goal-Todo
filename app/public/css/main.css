@@ -158,7 +158,9 @@ dl {
 
 .error-msg {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 /* ログイン */
