@@ -362,7 +362,7 @@ class User {
     $stmh->execute();
     $record = $stmh->fetchAll(PDO::FETCH_ASSOC);
 
-    return $record;
+    return $record['mail'];
     
     if ($record['mail'] === self::$mail) {
       return false;
