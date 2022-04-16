@@ -387,7 +387,8 @@ class User {
 
     $query =  "SELECT * FROM user WHERE mail = ? AND password = ?";
     $stmh = $pdo->prepare($query);
-    $stmh->bindParam(1, self::$mail, self::$pass);
+    $stmh->bindValue(1, self::$mail);
+    $stmh->bindValue(2, self::$pass);
     $stmh->execute();
     $member = $stmh->fetchAll(PDO::FETCH_ASSOC);
     
