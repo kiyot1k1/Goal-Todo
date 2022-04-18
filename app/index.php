@@ -60,7 +60,9 @@ if (isset($_POST['todo_id'])) {
 
   <main>
 
-    <div class="top-msg"><?php echo $msg; ?></div>
+    <div class="top-msg">
+      <?php echo $msg; ?>
+    </div>
 
     <?php if ($logout): ?>
       <div class="top-logout"><?php echo $logout; ?></div>
