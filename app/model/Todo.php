@@ -385,12 +385,14 @@ class User {
       echo 'DB接続エラー： ' . $e->getMessage();
     };
 
-    $query =  "SELECT * FROM user WHERE mail = ? AND password = ?";
-    $stmh = $pdo->prepare($query);
-    $stmh->bindValue(1, self::$mail);
-    $stmh->bindValue(2, self::$pass);
-    $stmh->execute();
-    $member = $stmh->fetchAll(PDO::FETCH_ASSOC);
+    // $query =  "SELECT * FROM user WHERE mail = ? AND password = ?";
+    // $stmh = $pdo->prepare($query);
+    // $stmh->bindValue(1, self::$mail);
+    // $stmh->bindValue(2, self::$pass);
+    // $stmh->execute();
+    // $member = $stmh->fetchAll(PDO::FETCH_ASSOC);
+
+    ➡︎sprintfに変更
 
     // return $member;
     
