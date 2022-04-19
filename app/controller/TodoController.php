@@ -370,6 +370,9 @@ class UserController {
     $mail = $_POST['mail'];
     $pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
 
+    var_dump($mail);
+    exit;
+
     if ($mail != '' && $pass != '') {
       $user = new User;
       $user->setMail($mail);
