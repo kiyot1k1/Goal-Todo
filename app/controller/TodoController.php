@@ -381,8 +381,8 @@ class UserController {
       return;
     }
 
-    var_dump($result);
-    exit;
+    // var_dump($result);
+    // exit;
 
     if ($result === false) { 
       session_start();
