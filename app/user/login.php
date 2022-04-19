@@ -52,7 +52,7 @@ if (isset($_SESSION['error_msg'])) {
       </div>
     <? endif; ?>
 
-    <form action="join.php" method="post" class="login-form">
+    <form action="login.php" method="post" class="login-form">
       <dl>
         <dt>メールアドレス</dt>
         <dd><input type="text" name="mail" class="mail" size="35" maxlength="255" required></dd>
