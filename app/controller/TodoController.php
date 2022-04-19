@@ -370,7 +370,7 @@ class UserController {
     $mail = $_POST['mail'];
     $pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
 
-    var_dump($mail);
+    var_dump($pass);
     exit;
 
     if ($mail != '' && $pass != '') {
