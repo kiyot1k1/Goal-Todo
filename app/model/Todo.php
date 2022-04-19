@@ -392,7 +392,7 @@ class User {
     $stmh->execute();
     $member = $stmh->fetchAll(PDO::FETCH_ASSOC);
 
-    return $member;
+    // return $member;
     
     if ($member) {
       return $member;
