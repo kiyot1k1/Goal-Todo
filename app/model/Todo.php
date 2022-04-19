@@ -391,6 +391,8 @@ class User {
     $stmh->bindValue(2, self::$pass);
     $stmh->execute();
     $member = $stmh->fetchAll(PDO::FETCH_ASSOC);
+
+    return $member;
     
     if ($member) {
       return $member;
