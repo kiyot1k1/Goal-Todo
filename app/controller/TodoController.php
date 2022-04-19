@@ -370,9 +370,6 @@ class UserController {
     $mail = $_POST['mail'];
     $pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
 
-    var_dump($pass);
-    exit;
-
     if ($mail != '' && $pass != '') {
       $user = new User;
       $user->setMail($mail);
@@ -383,6 +380,9 @@ class UserController {
       $_SESSION['error_msg'] = "メールアドレスとパスワードをご記入下さい。";
       return;
     }
+
+    var_dump($result);
+    exit;
 
     if ($result === false) { 
       session_start();
