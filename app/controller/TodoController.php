@@ -386,12 +386,12 @@ class UserController {
       $_SESSION['error_msg'] = "ログインに失敗しました。再度やり直して下さい。";
       return;
     } else {
-      // session_start();
-      // $_SESSION['id'] = $result['id'];
-      // $_SESSION['name'] = $result['name'];
-      // $_SESSION['time'] = time();
-      // header("Location: https://goal-todo.herokuapp.com/index.php");
-      // return;
+      session_start();
+      $_SESSION['id'] = $result['id'];
+      $_SESSION['name'] = $result['name'];
+      $_SESSION['time'] = time();
+      header("Location: https://goal-todo.herokuapp.com/index.php");
+      return;
     }
   }
 }
