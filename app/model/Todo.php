@@ -385,7 +385,11 @@ class User {
       echo 'DB接続エラー： ' . $e->getMessage();
     };
 
-    $query =  sprintf("SELECT * FROM user WHERE (mail, password) VALUES ('%s', '%s') ",
+    // $query =  sprintf("SELECT * FROM user WHERE (mail, password) VALUES ('%s', '%s') ",
+    //                     self::$mail,
+    //                     self::$pass,
+    //                     );
+    $query =  sprintf("SELECT * FROM user WHERE mail = '%s', password = '%s'",
                         self::$mail,
                         self::$pass,
                         );
