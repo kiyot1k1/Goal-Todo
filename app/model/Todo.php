@@ -391,7 +391,7 @@ class User {
     //                     );
     $query =  sprintf("SELECT * FROM user WHERE mail = '%s', password = '%s'",
                         self::$mail,
-                        self::$pass,
+                        self::$pass
                         );
 
     $stmh = $pdo->query($query);
