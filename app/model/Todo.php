@@ -385,24 +385,27 @@ class User {
       echo 'DB接続エラー： ' . $e->getMessage();
     };
 
-    // $query =  sprintf("SELECT * FROM user WHERE (mail, password) VALUES ('%s', '%s') ",
+    // // $query =  sprintf("SELECT * FROM user WHERE (mail, password) VALUES ('%s', '%s') ",
+    // //                     self::$mail,
+    // //                     self::$pass,
+    // //                     );
+    // $query =  sprintf("SELECT * FROM user WHERE mail = '%s', password = '%s'",
     //                     self::$mail,
-    //                     self::$pass,
+    //                     self::$pass
     //                     );
-    $query =  sprintf("SELECT * FROM user WHERE mail = '%s', password = '%s'",
-                        self::$mail,
-                        self::$pass
-                        );
 
-    $stmh = $pdo->query($query);
-    $member = $stmh->fetchAll(PDO::FETCH_ASSOC);
+    // $stmh = $pdo->query($query);
+    // $member = $stmh->fetchAll(PDO::FETCH_ASSOC);
 
-    // $query =  "SELECT * FROM user WHERE mail = ? AND password = ?";
-    // $stmh = $pdo->prepare($query);
+    $query =  "SELECT * FROM user WHERE mail = ? AND password = ?";
+    $stmh = $pdo->prepare($query);
     // $stmh->bindValue(1, self::$mail);
     // $stmh->bindValue(2, self::$pass);
-    // $stmh->execute();
-    // $member = $stmh->fetchAll(PDO::FETCH_ASSOC);
+    $stmh->execute(array(
+      self::$mail,
+      self::$pass
+    ));
+    $member = $stmh->fetchAll(PDO::FETCH_ASSOC);
 
     return $member;
     
