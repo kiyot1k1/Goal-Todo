@@ -397,14 +397,16 @@ class User {
     // $stmh = $pdo->query($query);
     // $member = $stmh->fetchAll(PDO::FETCH_ASSOC);
 
-    $query =  "SELECT * FROM user WHERE mail = ? AND password = ?";
-    $stmh = $pdo->prepare($query);
+    // $query =  "SELECT * FROM user WHERE mail = ? AND password = ?";
+    // $stmh = $pdo->prepare($query);
     // $stmh->bindValue(1, self::$mail);
     // $stmh->bindValue(2, self::$pass);
-    $stmh->execute(array(
-      self::$mail,
-      self::$pass
-    ));
+    // $stmh->execute();
+
+    $query = "SELECT * FROM user WHERE mail = ?";
+    $stmh = $pdo->prepare($query);
+    $stmh->bindValue(1, self::$mail);
+    $stmh->execute();
     $member = $stmh->fetchAll(PDO::FETCH_ASSOC);
 
     return $member;
