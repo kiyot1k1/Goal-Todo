@@ -403,10 +403,11 @@ class User {
     // $stmh->bindValue(2, self::$pass);
     // $stmh->execute();
 
-    $query = "SELECT * FROM user WHERE mail = ?";
+    $query = "SELECT * FROM user WHERE mail = ? AND password = ?";
     $stmh = $pdo->prepare($query);
     $stmh->bindValue(1, self::$mail);
-    $stmh->execute();
+    $stmh->bindValue(2, self::$pass);
+    $stmh->execute(); 
     $member = $stmh->fetchAll(PDO::FETCH_ASSOC);
 
     return $member;
