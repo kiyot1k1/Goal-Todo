@@ -403,16 +403,15 @@ class User {
     // $stmh->bindValue(2, self::$pass);
     // $stmh->execute();
 
-    $query = "SELECT * FROM user WHERE mail = ? AND password = ?";
+    $query = "SELECT * FROM user WHERE mail = ? ";
     $stmh = $pdo->prepare($query);
     $stmh->bindValue(1, self::$mail);
-    $stmh->bindValue(2, $_POST['password']);
     $stmh->execute(); 
     $member = $stmh->fetchAll(PDO::FETCH_ASSOC);
 
     return $member;
     
-    if ($member) {
+    if (password_verify(self::$pass, $member['pass'])) {
       return $member;
     } else {
       return false;
