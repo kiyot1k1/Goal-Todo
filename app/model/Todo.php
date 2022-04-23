@@ -408,8 +408,10 @@ class User {
     $stmh->bindValue(1, self::$mail);
     $stmh->execute(); 
     $member = $stmh->fetchAll(PDO::FETCH_ASSOC);
+
+    return $member['password'];
     
-    if (password_verify($_POST['pass'], $member['password'])) {
+    if (password_verify(self::$pass, $member['password'])) {
       return $member;
     } else {
       return false;
