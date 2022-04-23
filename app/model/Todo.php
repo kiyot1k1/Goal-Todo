@@ -409,7 +409,7 @@ class User {
     $stmh->execute(); 
     $member = $stmh->fetchAll(PDO::FETCH_ASSOC);
     
-    if (password_verify(self::$pass, $member['pass'])) {
+    if (password_verify(self::$pass, $member['password'])) {
       return $member;
     } else {
       return false;
