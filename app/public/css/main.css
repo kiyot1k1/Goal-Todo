@@ -61,9 +61,9 @@ main {
 .top-msg {
   font-size: 15px;
   color: rgb(50, 50, 50);
-  margin-left: 20px;
   margin-bottom: 10px;
   text-decoration: none;
+  text-align: center;
 }
 
 .top-logout {
