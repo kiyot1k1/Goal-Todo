@@ -67,10 +67,14 @@ main {
 }
 
 .top-logout {
+  font-size: 15px;
+  color: midnightblue;
   margin-left: auto;
   padding-right: 10px;
   display: block;
   width: 75px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .user {
