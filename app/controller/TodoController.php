@@ -381,9 +381,6 @@ class UserController {
       return;
     }
 
-    var_dump($result);
-    exit;
-
     if ($result === false) { 
       session_start();
       $_SESSION['error_msg'] = "ログインに失敗しました。再度やり直して下さい。";
