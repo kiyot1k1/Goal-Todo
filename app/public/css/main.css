@@ -69,6 +69,7 @@ main {
 .top-logout {
   margin-left: auto;
   padding-right: 10px;
+  display: inline-block;
 }
 
 .user {
