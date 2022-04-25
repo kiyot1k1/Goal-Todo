@@ -410,7 +410,7 @@ class User {
     $member = $stmh->fetch(PDO::FETCH_ASSOC);
     
     // if {$member && count($member) > 0)}
-    if (password_verify(self::$pass, $member['password'])) {
+    if (password_verify($_POST['pass'], $member['password'])) {
       return $member;
     } else {
       return false;
