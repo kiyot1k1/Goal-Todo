@@ -385,31 +385,12 @@ class User {
       echo 'DB接続エラー： ' . $e->getMessage();
     };
 
-    // // $query =  sprintf("SELECT * FROM user WHERE (mail, password) VALUES ('%s', '%s') ",
-    // //                     self::$mail,
-    // //                     self::$pass,
-    // //                     );
-    // $query =  sprintf("SELECT * FROM user WHERE mail = '%s', password = '%s'",
-    //                     self::$mail,
-    //                     self::$pass
-    //                     );
-
-    // $stmh = $pdo->query($query);
-    // $member = $stmh->fetchAll(PDO::FETCH_ASSOC);
-
-    // $query =  "SELECT * FROM user WHERE mail = ? AND password = ?";
-    // $stmh = $pdo->prepare($query);
-    // $stmh->bindValue(1, self::$mail);
-    // $stmh->bindValue(2, self::$pass);
-    // $stmh->execute();
-
     $query = "SELECT * FROM user WHERE mail = ? ";
     $stmh = $pdo->prepare($query);
     $stmh->bindValue(1, self::$mail);
     $stmh->execute(); 
     $member = $stmh->fetch(PDO::FETCH_ASSOC);
     
-    // if {$member && count($member) > 0)}
     if (password_verify($_POST['pass'], $member['password'])) {
       return $member;
     } else {
