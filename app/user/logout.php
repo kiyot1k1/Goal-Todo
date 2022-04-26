@@ -34,8 +34,10 @@ session_destroy();
   <main>
     <h1>ログアウト</h1>
 
-    <p>ログアウトしました。</p>
-    <a href="./../index.php">トップページへ</a>
+    <div class="logout">
+      <p>ログアウトしました。</p>
+      <a href="./../index.php">トップページへ</a>
+    </div>
 
   </main>
 
