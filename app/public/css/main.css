@@ -333,7 +333,7 @@ h1.detail-page {
   /* トップページ */
   .top-msg {
     font-size: 13px;
-    margin-bottom: 0;
+    margin-bottom: 15px;
   }
 
   .user {
@@ -350,6 +350,10 @@ h1.detail-page {
   .login {
     font-size: 13px;
     margin-left: 10px;
+  }
+
+  .top-logout {
+    font-size: 13px;
   }
 
   h2 {
