@@ -92,6 +92,7 @@ main {
   color: midnightblue;
   margin-left: auto;
   padding-right: 10px;
+  padding-left: auto;
   /* display: block; */
   /* width: 85px; */
   font-weight: bold;
