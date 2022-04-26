@@ -68,7 +68,7 @@ if (isset($_POST['todo_id'])) {
       <a href="./user/join.php" class="user-registration">ユーザー登録</a>
       <a href="./user/login.php" class="login">ログイン</a>
       <?php if ($logout): ?>
-        <div class="top-logout"><?php echo $logout; ?></div>
+        <?php echo $logout; ?>
       <? endif; ?>
     </div>
       
