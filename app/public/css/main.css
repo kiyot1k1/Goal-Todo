@@ -69,6 +69,7 @@ main {
 .user {
   padding-bottom: 5px;
   border-bottom: 5px solid #ffffff;
+  display: flex;
 }
 
 .user-registration {
@@ -92,9 +93,6 @@ main {
   color: midnightblue;
   margin-left: auto;
   padding-right: 10px;
-  padding-left: auto;
-  /* display: block; */
-  /* width: 85px; */
   font-weight: bold;
   text-decoration: none;
 }
