@@ -62,15 +62,14 @@ if (isset($_POST['todo_id'])) {
 
     <div class="top-msg">
       <?php echo $msg; ?>
-    </div>
-
-    <?php if ($logout): ?>
-      <div class="top-logout"><?php echo $logout; ?></div>
-    <? endif; ?>  
+    </div>  
 
     <div class="user">
       <a href="./user/join.php" class="user-registration">ユーザー登録</a>
       <a href="./user/login.php" class="login">ログイン</a>
+      <?php if ($logout): ?>
+        <div class="top-logout"><?php echo $logout; ?></div>
+      <? endif; ?>
     </div>
       
     <!-- 目標設定 -->
