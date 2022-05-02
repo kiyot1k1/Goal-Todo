@@ -390,7 +390,7 @@ class UserController {
       $_SESSION['id'] = $result['id'];
       $_SESSION['name'] = $result['name'];
       $_SESSION['time'] = time();
-      header("Location: ./../ndex.php");
+      header("Location: ./../index.php");
       return;
     }
   }
