@@ -384,6 +384,7 @@ class UserController {
     if ($result === false) { 
       session_start();
       $_SESSION['error_msg'] = "ログインに失敗しました。再度やり直して下さい。";
+      header("Location: ./../index.php");
       return;
     } else {
       session_start();
