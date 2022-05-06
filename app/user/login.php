@@ -28,17 +28,15 @@ if (isset($_SESSION['error_msg'])) {
 </head>
 <body>
   <header>
-    <a href="./../index.php">
-      <div class="header-zone">
-        <div>
-          <img src="./../img/Goal.jpg" alt="目標の写真" class="goal-pic">
-        </div>
-        <div>
-          <img src="./../img/Todolist.jpg" alt="TODOの写真" class="todo-pic">
-        </div>
+    <div class="header-zone">
+      <div>
+        <img src="./../img/Goal.jpg" alt="目標の写真" class="goal-pic">
       </div>
-      <h1>目標とTODOの管理アプリ</h1>
-    </a>
+      <div>
+        <img src="./../img/Todolist.jpg" alt="TODOの写真" class="todo-pic">
+      </div>
+    </div>
+    <h1>目標とTODOの管理アプリ</h1>
   </header>
 
   <main>
