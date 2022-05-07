@@ -64,11 +64,13 @@ if (isset($_POST['todo_id'])) {
     </div>  
 
     <div class="user">
-      <a href="./user/join.php" class="user-registration">ユーザー登録</a>
-      <a href="./user/login.php" class="login">ログイン</a>
-      <?php if ($logout): ?>
-        <?php echo $logout; ?>
-      <? endif; ?>
+      <!-- <a href="./user/join.php" class="user-registration">ユーザー登録</a>
+      <a href="./user/login.php" class="login">ログイン</a> -->
+      <!-- <?php if ($logout): ?> -->
+        <!-- <?php echo $logout; ?> -->
+      <!-- <? endif; ?> -->
+      ➡︎「main.css」も削除
+      <?php echo $logout; ?>
     </div>
       
     <!-- 目標設定 -->
