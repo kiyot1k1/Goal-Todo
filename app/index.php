@@ -23,8 +23,7 @@ if (isset($_SESSION['id']) && $_SESSION['time'] + 3600 > time()) {
   $msg = htmlspecialchars($username, ENT_QUOTES) . 'さん<br>TODOを管理して、目標を達成しましょう！';
   $logout = '<a href="./user/logout.php" class="top-logout">ログアウト</a>';
 } else {
-  // $msg = '※ログインして下さい';
-  // $logout = '';
+  header("Location: ./user/login.php");
 }
 
 if (isset($_POST['todo_id'])) {
