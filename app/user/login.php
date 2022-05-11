@@ -61,7 +61,7 @@ if (isset($_SESSION['error_msg'])) {
     </form>
 
     <div class="login-to-join">
-      <p>ユーザー登録がまだの方は、<br><a href="./join.php">こちらから</a>ご登録下さい</p>
+      <p>ユーザー登録がまだの方は<br><a href="./join.php">こちらから</a>ご登録下さい</p>
     </div>
   </main>
 
