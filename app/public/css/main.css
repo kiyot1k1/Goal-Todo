@@ -72,22 +72,6 @@ main {
   display: flex;
 }
 
-/* .user-registration {
-  font-size: 15px;
-  color: midnightblue;
-  margin-left: 20px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.login {
-  font-size: 15px;
-  color: midnightblue;
-  margin-left: 20px;
-  font-weight: bold;
-  text-decoration: none;
-} */
-
 .top-logout {
   font-size: 15px;
   color: midnightblue;
@@ -351,16 +335,6 @@ h1.detail-page {
     margin: 0 auto;
     border-bottom: 3px solid #ffffff;
   }
-
-  /* .user-registration {
-    font-size: 13px;
-    margin-left: 45px;
-  }
-
-  .login {
-    font-size: 13px;
-    margin-left: 10px;
-  } */
 
   .top-logout {
     font-size: 13px;
