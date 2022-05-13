@@ -69,7 +69,7 @@ if (isset($_POST['todo_id'])) {
       <!-- <?php if ($logout): ?> -->
         <!-- <?php echo $logout; ?> -->
       <!-- <? endif; ?> -->
-      ➡︎「main.css」も削除
+      <!-- ➡︎「main.css」も削除 -->
       <?php echo $logout; ?>
     </div>
       
