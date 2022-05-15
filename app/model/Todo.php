@@ -30,6 +30,7 @@ class Goal {
     };
 
     $stmh = $pdo->query("SELECT * FROM goals");
+    // ➡︎where句を変更
     $goal_list = $stmh->fetchAll(PDO::FETCH_ASSOC);
 
     return $goal_list;
