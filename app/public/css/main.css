@@ -141,6 +141,10 @@ dl {
   margin-bottom: 8px;
 }
 
+.name {
+  width: 310px;
+}
+
 /* 登録後ページ */
 .thanks {
   text-align: center;
@@ -156,6 +160,14 @@ dl {
 /* ログイン */
 .login-form {
   margin: 10px auto 0;
+  width: 310px;
+}
+
+.mail {
+  width: 310px;
+}
+
+.pass {
   width: 310px;
 }
 
