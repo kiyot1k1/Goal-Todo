@@ -55,7 +55,7 @@ if (isset($_SESSION['error_msg'])) {
     <form action="join.php" method="post" class="join-form">
       <dl>
         <dt>名前</dt>
-        <dd><input type="text" name="name" size="35" maxlength="255" required></dd>
+        <dd><input type="text" name="name" class="name" size="35" maxlength="255" required></dd>
         <dt>メールアドレス</dt>
         <dd><input type="text" name="mail" class="mail" size="35" maxlength="255" required></dd>
         <dt>パスワード</dt>
