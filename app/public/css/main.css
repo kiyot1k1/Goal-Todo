@@ -147,6 +147,7 @@ dl {
 
 /* 登録後ページ */
 .thanks {
+  margin-top: 1rem;
   text-align: center;
 }
 
