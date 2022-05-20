@@ -391,6 +391,11 @@ h1.detail-page {
     padding-left: 4px;
   }
 
+  /* ログイン */
+  .login-to-join {
+    font-size: 13px;
+  }
+
   /* ログアウト */
   .logout {
     font-size: 13px;
