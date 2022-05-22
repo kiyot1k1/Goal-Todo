@@ -173,6 +173,7 @@ dl {
 }
 
 .login-to-join {
+  color: rgb(50, 50, 50);
   margin-top: 1rem;
   text-align: center;
 }
