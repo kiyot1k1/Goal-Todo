@@ -392,6 +392,10 @@ h1.detail-page {
   }
 
   /* ログイン */
+  dt {
+    font-size: 15px;
+  }
+  
   .login-to-join {
     font-size: 13px;
   }
