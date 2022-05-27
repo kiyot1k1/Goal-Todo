@@ -29,7 +29,7 @@ class Goal {
       echo 'DB接続エラー： ' . $e->getMessage();
     };
 
-    $stmh = $pdo->query("SELECT * FROM goals");
+    // $stmh = $pdo->query("SELECT * FROM goals WHERE id = user_id ");
     $goal_list = $stmh->fetchAll(PDO::FETCH_ASSOC);
 
     return $goal_list;
