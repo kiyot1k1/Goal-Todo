@@ -299,11 +299,8 @@ h1.detail-page {
   /* 全体 */
   body {
     /* background: radial-gradient(rgb(223, 238, 250), rgba(9, 111, 174, 0.75));
-    background-size: contain; 
     background-repeat: repeat; */
     background-position:top;
-    /* width: 100vw;
-    height: 100vh; */
   }
 
   header {
