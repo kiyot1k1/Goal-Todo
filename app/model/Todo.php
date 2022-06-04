@@ -360,7 +360,7 @@ class User {
       echo 'DB接続エラー： ' . $e->getMessage();
     };
 
-    $query =  "SELECT * FROM user WHERE mail = ?";
+    $query =  "SELECT * FROM users WHERE mail = ?";
     $stmh = $pdo->prepare($query);
     $stmh->bindValue(1, self::$mail);
     $stmh->execute();
@@ -369,7 +369,7 @@ class User {
     if ($record) {
       return false;
     } else {
-      $query =  sprintf("INSERT INTO user (name, mail, password, created_at) VALUES ('%s', '%s', '%s', '%s') ",
+      $query =  sprintf("INSERT INTO users (name, mail, password, created_at) VALUES ('%s', '%s', '%s', '%s') ",
                         self::$name,
                         self::$mail,
                         self::$pass,
@@ -389,7 +389,7 @@ class User {
       echo 'DB接続エラー： ' . $e->getMessage();
     };
 
-    $query = "SELECT * FROM user WHERE mail = ? ";
+    $query = "SELECT * FROM users WHERE mail = ? ";
     $stmh = $pdo->prepare($query);
     $stmh->bindValue(1, self::$mail);
     $stmh->execute(); 
