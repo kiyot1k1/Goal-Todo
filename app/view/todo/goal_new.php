@@ -21,6 +21,11 @@ if (isset($_SESSION['error_msg'])) {
   unset($_SESSION['error_msg']);
 }
 
+if (isset($_SESSION['id'])) {
+  var_dump($_SESSION['id']);
+  exit;
+}
+
 ?>
 
 
