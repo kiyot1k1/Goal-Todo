@@ -42,10 +42,6 @@ class Goal {
       // $query =  sprintf("INSERT INTO goals (user_id, goal, created_at, updated_at) VALUES ('$_SESSION['id']', '%s', now(), now())",
       //                   $this->goal
       //                   );
-      // $query =  sprintf("INSERT INTO goals (user_id, goal, created_at, updated_at) VALUES ('%s', '%s', now(), now())",
-      //                   $this->user_id,
-      //                   $this->goal
-      //                   );
       $query =  sprintf("INSERT INTO goals (goal, created_at, updated_at) VALUES ('%s', now(), now()) ",
                         $this->goal
                         );
