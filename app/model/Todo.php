@@ -39,13 +39,12 @@ class Goal {
   public function goal_save() {
     try {
       $pdo = new PDO(DSN, USERNAME, PASSWORD);
-      // $query =  sprintf("INSERT INTO goals (user_id, goal, created_at, updated_at) VALUES ('$_SESSION['id']', '%s', now(), now())",
-      //                   $this->goal
-      //                   );
-      $query =  sprintf("INSERT INTO goals (goal, created_at, updated_at) VALUES ('%s', now(), now()) ",
+      $query = sprintf("INSERT INTO goals (user_id, goal, created_at, updated_at) VALUES ('$_SESSION['id']', '%s', now(), now())",
                         $this->goal
                         );
-
+      // $query = sprintf("INSERT INTO goals (goal, created_at, updated_at) VALUES ('%s', now(), now()) ",
+      //                   $this->goal
+      //                   );
       $result = $pdo->query($query);
     } catch (Exception $e) {
       error_log("目標設定の作成に失敗しました。");
@@ -91,7 +90,7 @@ class Goal {
   public function goal_update() {
     try {
       $pdo = new PDO(DSN, USERNAME, PASSWORD);
-      $query =  sprintf("UPDATE goals  SET goal = '%s', updated_at = '%s' WHERE id = '%s'",
+      $query = sprintf("UPDATE goals  SET goal = '%s', updated_at = '%s' WHERE id = '%s'",
                         $this->goal,
                         date("Y-m-d H:i:s"),
                         $this->goal_id
@@ -112,7 +111,7 @@ class Goal {
   public function goal_delete() {
     try {
       $pdo = new PDO(DSN, USERNAME, PASSWORD);
-      $query =  sprintf("DELETE FROM goals WHERE id = '%s'", $this->goal_id);
+      $query = sprintf("DELETE FROM goals WHERE id = '%s'", $this->goal_id);
 
       $result = $pdo->query($query);
     } catch (Exception $e) {
@@ -242,7 +241,7 @@ class Todo {
   public function save() {
     try {
       $pdo = new PDO(DSN, USERNAME, PASSWORD);
-      // $query =  sprintf("INSERT INTO todos (user_id, title, detail, status, created_at, updated_at) VALUES ('$_SESSION['id']', '%s', '%s', 0 ,now(), now()) ",
+      // $query = sprintf("INSERT INTO todos (user_id, title, detail, status, created_at, updated_at) VALUES ('$_SESSION['id']', '%s', '%s', 0 ,now(), now()) ",
       //                   $this->title,
       //                   $this->detail
       //                   );
@@ -266,7 +265,7 @@ class Todo {
   public function update() {
     try {
       $pdo = new PDO(DSN, USERNAME, PASSWORD);
-      $query =  sprintf("UPDATE todos  SET title = '%s', detail = '%s', updated_at = '%s' WHERE id = '%s'",
+      $query = sprintf("UPDATE todos  SET title = '%s', detail = '%s', updated_at = '%s' WHERE id = '%s'",
                         $this->title,
                         $this->detail,
                         date("Y-m-d H:i:s"),
@@ -305,7 +304,7 @@ class Todo {
   public function delete() {
     try {
       $pdo = new PDO(DSN, USERNAME, PASSWORD);
-      $query =  sprintf("DELETE FROM todos WHERE id = '%s'", $this->id);
+      $query = sprintf("DELETE FROM todos WHERE id = '%s'", $this->id);
       $result = $pdo->query($query);
     } catch (Exception $e) {
       error_log("削除に失敗しました。");
@@ -321,7 +320,7 @@ class Todo {
   public function updateStatus() {
     try {
       $pdo = new PDO(DSN, USERNAME, PASSWORD);
-      $query =  sprintf("UPDATE todos  SET status = '%s', updated_at = '%s' WHERE id = '%s'",
+      $query = sprintf("UPDATE todos  SET status = '%s', updated_at = '%s' WHERE id = '%s'",
                         $this->status,
                         date("Y-m-d H:i:s"),
                         $this->id
