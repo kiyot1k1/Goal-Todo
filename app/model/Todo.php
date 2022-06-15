@@ -39,7 +39,8 @@ class Goal {
   public function goal_save() {
     try {
       $pdo = new PDO(DSN, USERNAME, PASSWORD);
-      $query = sprintf("INSERT INTO goals (user_id, goal, created_at, updated_at) VALUES ('$_SESSION['id']', '%s', now(), now())",
+      $query = sprintf("INSERT INTO goals (user_id, goal, created_at, updated_at) VALUES ('%s', '%s', now(), now())",
+                        $_SESSION['id'],
                         $this->goal
                         );
       // $query = sprintf("INSERT INTO goals (goal, created_at, updated_at) VALUES ('%s', now(), now()) ",
