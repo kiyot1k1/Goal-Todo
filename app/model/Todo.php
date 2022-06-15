@@ -56,6 +56,7 @@ class Goal {
     // };
 
     // return $result;
+    session_start();
     return $_SESSION['id'];
   }
 
