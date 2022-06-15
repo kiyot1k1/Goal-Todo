@@ -34,6 +34,9 @@ class GoalController {
     $goal->setGoal($valid_data['goal']);
     $result = $goal->goal_save();
 
+    var_dump($result);
+    exit;
+
     if ($result === false) {
       $param = sprintf("?goal=%s", $_POST['goal']);
       header(sprintf("Location: ./goal_new.php%s", $param));
