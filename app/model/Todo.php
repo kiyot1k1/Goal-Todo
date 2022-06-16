@@ -57,7 +57,7 @@ class Goal {
     // };
 
     // return $result;
-
+    session_start();
     var_dump($_SESSION['id']);
   }
 
