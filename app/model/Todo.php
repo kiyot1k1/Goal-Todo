@@ -239,18 +239,20 @@ class Todo {
 
    return "";    
   }
-
+  
   public function save() {
     try {
+      session_start();
       $pdo = new PDO(DSN, USERNAME, PASSWORD);
-      // $query = sprintf("INSERT INTO todos (user_id, title, detail, status, created_at, updated_at) VALUES ('$_SESSION['id']', '%s', '%s', 0 ,now(), now()) ",
-      //                   $this->title,
-      //                   $this->detail
-      //                   );
-      $query =  sprintf("INSERT INTO todos (title, detail, status, created_at, updated_at) VALUES ('%s', '%s', 0 ,now(), now()) ",
+      $query = sprintf("INSERT INTO todos (user_id, title, detail, status, created_at, updated_at) VALUES ('%s', '%s', '%s', 0 ,now(), now()) ",
+                        $_SESSION['id'],
                         $this->title,
                         $this->detail
                         );
+      // $query =  sprintf("INSERT INTO todos (title, detail, status, created_at, updated_at) VALUES ('%s', '%s', 0 ,now(), now()) ",
+      //                   $this->title,
+      //                   $this->detail
+      //                   );
                       
       $result = $pdo->query($query);
     } catch (Exception $e) {
