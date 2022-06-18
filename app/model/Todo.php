@@ -29,8 +29,8 @@ class Goal {
       echo 'DB接続エラー： ' . $e->getMessage();
     };
 
-    $stmh = $pdo->query("SELECT * FROM goals g, users u, WHERE g.user_id = u.id");
-    // $stmh = $pdo->query("SELECT * FROM goals");
+    // $stmh = $pdo->query("SELECT * FROM goals g, users u, WHERE g.user_id = u.id");
+    $stmh = $pdo->query("SELECT * FROM goals");
     $goal_list = $stmh->fetchAll(PDO::FETCH_ASSOC);
 
     return $goal_list;
@@ -40,13 +40,13 @@ class Goal {
     try {
       session_start();
       $pdo = new PDO(DSN, USERNAME, PASSWORD);
-      $query = sprintf("INSERT INTO goals (user_id, goal, created_at, updated_at) VALUES ('%s', '%s', now(), now())",
-                        $_SESSION['id'],
-                        $this->goal
-                        );
-      // $query = sprintf("INSERT INTO goals (goal, created_at, updated_at) VALUES ('%s', now(), now()) ",
+      // $query = sprintf("INSERT INTO goals (user_id, goal, created_at, updated_at) VALUES ('%s', '%s', now(), now())",
+      //                   $_SESSION['id'],
       //                   $this->goal
       //                   );
+      $query = sprintf("INSERT INTO goals (goal, created_at, updated_at) VALUES ('%s', now(), now()) ",
+                        $this->goal
+                        );
       $result = $pdo->query($query);
     } catch (Exception $e) {
       error_log("目標設定の作成に失敗しました。");
@@ -200,8 +200,8 @@ class Todo {
       echo 'DB接続エラー： ' . $e->getMessage();
     };
     
-    $stmh = $pdo->query("SELECT * FROM todos t, users u, WHERE t.user_id = u.id");
-    // $stmh = $pdo->query("SELECT * FROM todos");
+    // $stmh = $pdo->query("SELECT * FROM todos t, users u, WHERE t.user_id = u.id");
+    $stmh = $pdo->query("SELECT * FROM todos");
     $todo_list = $stmh->fetchAll(PDO::FETCH_ASSOC);
 
     if ($todo_list && count($todo_list) > 0) {
@@ -244,15 +244,15 @@ class Todo {
     try {
       session_start();
       $pdo = new PDO(DSN, USERNAME, PASSWORD);
-      $query = sprintf("INSERT INTO todos (user_id, title, detail, status, created_at, updated_at) VALUES ('%s', '%s', '%s', 0 ,now(), now()) ",
-                        $_SESSION['id'],
-                        $this->title,
-                        $this->detail
-                        );
-      // $query =  sprintf("INSERT INTO todos (title, detail, status, created_at, updated_at) VALUES ('%s', '%s', 0 ,now(), now()) ",
+      // $query = sprintf("INSERT INTO todos (user_id, title, detail, status, created_at, updated_at) VALUES ('%s', '%s', '%s', 0 ,now(), now()) ",
+      //                   $_SESSION['id'],
       //                   $this->title,
       //                   $this->detail
       //                   );
+      $query =  sprintf("INSERT INTO todos (title, detail, status, created_at, updated_at) VALUES ('%s', '%s', 0 ,now(), now()) ",
+                        $this->title,
+                        $this->detail
+                        );
                       
       $result = $pdo->query($query);
     } catch (Exception $e) {
