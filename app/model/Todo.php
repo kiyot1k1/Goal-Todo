@@ -29,8 +29,8 @@ class Goal {
       echo 'DB接続エラー： ' . $e->getMessage();
     };
 
-    // $stmh = $pdo->query("SELECT * FROM goals g, users u, WHERE g.user_id = u.id");
-    $stmh = $pdo->query("SELECT * FROM goals");
+    $stmh = $pdo->query("SELECT * FROM goals g, users u, WHERE g.user_id = u.id");
+    // $stmh = $pdo->query("SELECT * FROM goals");
     $goal_list = $stmh->fetchAll(PDO::FETCH_ASSOC);
 
     return $goal_list;
@@ -200,8 +200,8 @@ class Todo {
       echo 'DB接続エラー： ' . $e->getMessage();
     };
     
-    $stmh = $pdo->query("SELECT * FROM todos t, users u, WHERE t.user_id = u.id");
-    // $stmh = $pdo->query("SELECT * FROM todos");
+    // $stmh = $pdo->query("SELECT * FROM todos t, users u, WHERE t.user_id = u.id");
+    $stmh = $pdo->query("SELECT * FROM todos");
     $todo_list = $stmh->fetchAll(PDO::FETCH_ASSOC);
 
     if ($todo_list && count($todo_list) > 0) {
