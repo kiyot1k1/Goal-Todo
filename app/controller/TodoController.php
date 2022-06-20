@@ -44,8 +44,8 @@ class GoalController {
   }
 
   public function goal_edit() {
-    // var_dump($_GET['goal_id']);
-    // exit;
+    var_dump($_GET['id']);
+    exit;
     $goal_id = '';
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
       if (isset($_GET['goal_id'])) {
