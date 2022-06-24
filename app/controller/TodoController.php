@@ -45,18 +45,18 @@ class GoalController {
 
   public function goal_edit() {
     $goal_id = '';
-    // if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    //   if (isset($_GET['goal_id'])) {
-    //     $goal_id = $_GET['goal_id'];
-    //   }
-    // }
+    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+      if (isset($_GET['goal_id'])) {
+        $goal_id = $_GET['goal_id'];
+      }
+    }
+
+    var_dump($goal_id);
+    exit;
 
     // if ($_POST['goal_id']) {
     //   $goal_id = $_POST['goal_id'];
     // }
-
-    var_dump($_POST['goal_id']);
-    exit;
 
     if (!$goal_id) {
       header("Location: ./../error/404.php");
