@@ -4,9 +4,6 @@ require_once(__DIR__ . '/controller/TodoController.php');
 $goal_controller = new GoalController;
 $goal_list = $goal_controller->goal_index();
 
-// var_dump($goal_list);
-// exit;
-
 $todo_controller = new TodoController;
 $todo_list = $todo_controller->index();
 
