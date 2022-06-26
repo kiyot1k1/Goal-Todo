@@ -5,6 +5,7 @@ require_once(__DIR__ . '/../config/db.php');
 class Goal {
   public $goal_id;
   public $goal;
+  public $user_id;
 
   public function goal_setId($goal_id) {
     $this->goal_id = $goal_id;
@@ -20,6 +21,10 @@ class Goal {
 
   public function getGoal() {
     return $this->goal;
+  }
+
+  public function setUser($user_id) {
+    $this->user_id = $user_id;
   }
 
   public static function goal_findAll() {
