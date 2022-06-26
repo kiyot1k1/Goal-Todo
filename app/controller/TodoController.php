@@ -10,6 +10,7 @@ class GoalController {
   }
 
   public function goal_new() {
+    session_start();
     $data = array(
       "goal" => $_POST['goal']
     );
@@ -32,6 +33,7 @@ class GoalController {
 
     $goal = new Goal;
     $goal->setGoal($valid_data['goal']);
+    $goal->setUser($_SESSION['id']);
     $result = $goal->goal_save();
 
     if ($result === false) {
