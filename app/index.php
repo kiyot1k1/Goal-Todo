@@ -20,7 +20,7 @@ if (isset($_SESSION['name'])) {
   $username = $_SESSION['name'];
 }
 
-if (isset($_SESSION['id']) && $_SESSION['time'] + 3600 > time()) {
+if (isset($_SESSION['user_id']) && $_SESSION['time'] + 3600 > time()) {
   $_SESSION['time'] = time();
   $msg = htmlspecialchars($username, ENT_QUOTES) . 'さん<br>TODOを管理して、目標を達成しましょう！';
   $logout = '<a href="./user/logout.php" class="top-logout">ログアウト</a>';
