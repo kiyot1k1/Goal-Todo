@@ -21,7 +21,7 @@ class GoalController {
     if ($validation->goal_check() === false) {
       $error_msg = $validation->goal_getErrorMessage();
 
-      session_start();
+      // session_start();
       $_SESSION['error_msg'] = $error_msg;
 
       $param = sprintf("?goal=%s", $_POST['goal']);
