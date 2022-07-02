@@ -32,7 +32,7 @@ class GoalController {
 
     $goal = new Goal;
     $goal->setGoal($valid_data['goal']);
-    $goal->setUser($_SESSION['id']);
+    $goal->setUser($_SESSION['user_id']);
     $result = $goal->goal_save();
 
     if ($result === false) {
