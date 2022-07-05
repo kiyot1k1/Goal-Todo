@@ -15,6 +15,11 @@ class GoalController {
       "goal" => $_POST['goal']
     );
 
+    global $user_id;
+    if (isset($_SESSION['user_id'])) {
+      $user_id = $_SESSION['user_id'];
+    }
+
     $validation = new GoalValidation;
     $validation->goal_setData($data);
  
@@ -32,7 +37,7 @@ class GoalController {
 
     $goal = new Goal;
     $goal->setGoal($valid_data['goal']);
-    $goal->setUser($_SESSION['user_id']);
+    $goal->setUser($user_id);
     $result = $goal->goal_save();
 
     if ($result === false) {
