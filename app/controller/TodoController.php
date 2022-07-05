@@ -55,10 +55,6 @@ class GoalController {
     var_dump($goal_id);
     exit;
 
-    // if ($_POST['goal_id']) {
-    //   $goal_id = $_POST['goal_id'];
-    // }
-
     if (!$goal_id) {
       header("Location: ./../error/404.php");
       return;
