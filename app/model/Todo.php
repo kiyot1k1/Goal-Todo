@@ -204,7 +204,6 @@ class Todo {
       echo 'DB接続エラー： ' . $e->getMessage();
     };
     
-    // $stmh = $pdo->query("SELECT * FROM todos t, users u WHERE t.user_id = u.id");
     $stmh = $pdo->query("SELECT t.id, title, detail, status, t.completed_at, t.created_at, t.updated_at, t.deleted_at, user_id FROM todos t, users u WHERE t.user_id = u.id");
     // $stmh = $pdo->query("SELECT * FROM todos");
     $todo_list = $stmh->fetchAll(PDO::FETCH_ASSOC);
