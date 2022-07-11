@@ -34,7 +34,6 @@ class Goal {
       echo 'DB接続エラー： ' . $e->getMessage();
     };
 
-    // $stmh = $pdo->query("SELECT * FROM goals g, users u WHERE g.user_id = u.id");
     $stmh = $pdo->query("SELECT g.id, goal, g.completed_at, g.created_at, g.updated_at, g.deleted_at, user_id FROM goals g, users u WHERE g.user_id = u.id");
     // $stmh = $pdo->query("SELECT * FROM goals");
     $goal_list = $stmh->fetchAll(PDO::FETCH_ASSOC);
