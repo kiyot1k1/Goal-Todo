@@ -145,6 +145,7 @@ class Todo {
   public $title;
   public $detail;
   public $status;
+  public $user_id;
 
   public function setId($id) {
     $this->id = $id;
@@ -176,6 +177,10 @@ class Todo {
 
   public function getStatus() {
     return $this->status;
+  }
+
+  public function setUser($user_id) {
+    $this->user_id = $user_id;
   }
 
   public static function findByQuery($query) { 
