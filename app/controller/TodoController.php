@@ -15,11 +15,6 @@ class GoalController {
       "goal" => $_POST['goal']
     );
 
-    // global $user_id;
-    // if (isset($_SESSION['user_id'])) {
-    //   $user_id = $_SESSION['user_id'];
-    // }
-
     $validation = new GoalValidation;
     $validation->goal_setData($data);
  
