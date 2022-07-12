@@ -166,6 +166,7 @@ class TodoController {
   }
 
   public function new() {
+    session_start();
     $data = array(
       "title" => $_POST['title'],
       "detail" => $_POST['detail']
@@ -189,6 +190,7 @@ class TodoController {
     $todo = new Todo;
     $todo->setTitle($valid_data['title']);
     $todo->setDetail($valid_data['detail']);
+    $todo->setUser($_SESSION['user_id']);
     $result = $todo->save();
 
     if ($result === false) {
