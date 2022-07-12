@@ -52,9 +52,6 @@ class GoalController {
       }
     }
 
-    var_dump($goal_id);
-    exit;
-
     if (!$goal_id) {
       header("Location: ./../error/404.php");
       return;
