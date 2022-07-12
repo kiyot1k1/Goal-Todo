@@ -251,10 +251,9 @@ class Todo {
   
   public function save() {
     try {
-      session_start();
       $pdo = new PDO(DSN, USERNAME, PASSWORD);
       $query = sprintf("INSERT INTO todos (user_id, title, detail, status, created_at, updated_at) VALUES ('%s', '%s', '%s', 0 ,now(), now()) ",
-                        $_SESSION['id'],
+                        $this->user_id,
                         $this->title,
                         $this->detail
                         );
