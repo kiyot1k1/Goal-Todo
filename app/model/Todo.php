@@ -251,12 +251,7 @@ class Todo {
                         $this->user_id,
                         $this->title,
                         $this->detail
-                        );
-      // $query =  sprintf("INSERT INTO todos (title, detail, status, created_at, updated_at) VALUES ('%s', '%s', 0 ,now(), now()) ",
-      //                   $this->title,
-      //                   $this->detail
-      //                   );
-                      
+                        );                      
       $result = $pdo->query($query);
     } catch (Exception $e) {
       error_log("新規作成に失敗しました。");
