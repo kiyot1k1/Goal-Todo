@@ -47,9 +47,6 @@ class Goal {
                         $this->user_id,
                         $this->goal
                       );
-      // $query = sprintf("INSERT INTO goals (goal, created_at, updated_at) VALUES ('%s', now(), now()) ",
-      //                   $this->goal
-      //                   );
       $result = $pdo->query($query);
     } catch (Exception $e) {
       error_log("目標設定の作成に失敗しました。");
