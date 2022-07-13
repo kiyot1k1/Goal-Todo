@@ -342,7 +342,6 @@ class Todo {
 
 // ここからユーザー管理用
 class User {
-
   public static $name;
   public static $mail;
   public static $pass;
