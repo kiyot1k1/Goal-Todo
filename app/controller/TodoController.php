@@ -176,8 +176,6 @@ class TodoController {
     $validation->setData($data);
     if ($validation->check() === false) {
       $error_msgs = $validation->getErrorMessages();
-
-      session_start();
       $_SESSION['error_msgs'] = $error_msgs;
 
       $params = sprintf("?title=%s&detail=%s", $_POST['title'], $_POST['detail']);
