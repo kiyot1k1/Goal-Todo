@@ -64,5 +64,6 @@ if (isset($_SESSION['error_msg'])) {
       <button type="submit">設定</button>
     </form> 
   </main>
+  
 </body>
 </html>
