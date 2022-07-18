@@ -58,7 +58,6 @@ if (isset($_POST['todo_id'])) {
   </header>
 
   <main>
-
     <div class="top-msg">
       <?php echo $msg; ?>
     </div>    
@@ -112,7 +111,6 @@ if (isset($_POST['todo_id'])) {
     <?php else: ?>
       <p>No date.</p>
     <?php endif; ?> 
-
   </main>
 
 
