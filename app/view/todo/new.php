@@ -77,5 +77,6 @@ if (isset($_SESSION['error_msgs'])) {
       <button type="submit">作成</button>
     </form> 
   </main>
+  
 </body>
 </html>
