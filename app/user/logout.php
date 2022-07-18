@@ -38,7 +38,6 @@ session_destroy();
       <p>ログアウトしました。</p>
       <p>再度ログインされる場合は、<br><a href="./login.php">こちらから</a>ログインして下さい。</p>
     </div>
-
   </main>
 
 </body>
