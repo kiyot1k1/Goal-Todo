@@ -1,5 +1,4 @@
 <?php
-
 // 目標設定用
 class GoalValidation {
   public $data= array();
