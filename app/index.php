@@ -217,5 +217,6 @@ if (isset($_POST['todo_id'])) {
       );      
     })
   </script>
+  
 </body>
 </html>
