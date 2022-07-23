@@ -74,7 +74,7 @@ if (isset($_SESSION['error_msgs'])) {
         <textarea name="detail" class="new-detail-textarea"><?php echo $detail; ?></textarea>
       </div>
 
-      <button type="submit">作成</button>
+      <button type="submit" class="button">作成</button>
     </form> 
   </main>
   
