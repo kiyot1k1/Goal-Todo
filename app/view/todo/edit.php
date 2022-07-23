@@ -71,7 +71,7 @@ if (isset($_SESSION['error_msgs'])) {
   
       <input type="hidden" name="todo_id" value="<?php echo $todo['id']; ?>">
   
-      <button type="submit">更新</button>
+      <button type="submit" class="button">更新</button>
     </form> 
   </main>
   
