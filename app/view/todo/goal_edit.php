@@ -60,7 +60,7 @@ if (isset($_SESSION['error_msg'])) {
   
       <input type="hidden" name="goal_id" value="<?php echo $goal['id']; ?>">
   
-      <button type="submit">更新</button>
+      <button type="submit" class="button">更新</button>
     </form> 
   </main>
   
