@@ -465,6 +465,10 @@ h1.detail-page {
     font-size: 18px;
   }
 
+  .detail-button {
+    font-size: 15px;
+  }
+
   /* 編集ページ */
   .goal-edit-textarea {
     width: 100vw;
