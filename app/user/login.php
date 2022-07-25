@@ -57,7 +57,7 @@ if (isset($_SESSION['error_msg'])) {
         <dt>パスワード</dt>
         <dd><input type="password" name="pass" class="pass" size="10" maxlength="20" required></dd>
       </dl>
-      <input type="submit" value="ログイン">
+      <input type="submit" value="ログイン" class="button">
     </form>
 
     <div class="login-to-join">
