@@ -25,7 +25,7 @@
   <main>
     <div class="thanks">
       <p>ユーザー登録が完了しました。</p>
-      <p>ログインは<a href="./login.php">こちらから</a></p>
+      <p>ログインは<a href="./login.php">こちらから</a>お願いします。</p>
     </div>
   </main>
 
